@@ -1,4 +1,12 @@
-    //ejercicio 6
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) { 
+        int estrellas;
+        Scanner teclado = new Scanner (System.in);
+        int costo_libro, creditos_actuales;
+        String estado_libro;
+//ejercicio 6
     System.out.println("Ahora valora el usuario del 1 al 5: ");
     estrellas = teclado.nextInt();
         
