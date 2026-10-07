@@ -1,0 +1,52 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercici9_projecteshar;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Caire
+ */
+public class Exercici9_PROJECTESHAR {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        
+        // guardamos el texto
+        String franja,modalidad;
+        
+        //mostramos franjas horarias
+        System.out.print("Franja horaria (Mañana/Tarde): ");
+        
+        //esperamos franja horaria
+        franja = sc.nextLine();
+        
+        
+        
+        //mostramos modalidad
+        System.out.print("Modalidad (Presencial/Online): ");
+        
+        //esperamos modalidad
+        modalidad = sc.nextLine();
+        
+        
+        // mostramos que queremos que por la Mañana sea online, con && solo sera verdadero si cumplen las 2 cosas a la vez 
+        if (franja.equalsIgnoreCase("Mañana") && modalidad.equalsIgnoreCase("Online")){
+            System.out.println("Reserva confirmada amb l'expert.");
+        
+        // mostramos que queremos que por la tarde sea solo presencial, y hacemos lo mismo
+        }
+        else if (franja.equalsIgnoreCase("Tarde") && modalidad.equalsIgnoreCase("Presencial")){
+        
+            System.out.println("L'expert no està disponible en aquesta franja per a aquesta modalitat.");
+        
+        }
+    }
+    
+}
