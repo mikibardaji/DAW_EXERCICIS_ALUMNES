@@ -1,0 +1,57 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercici5_provenshar;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Caire
+ */
+public class Exercici5_PROVENSHAR {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+       String estado;
+       double precio;
+        
+       // mostramos preci original del produto
+       System.out.print("Precio Original? ");
+       
+       //esperamos precio
+         precio = sc.nextDouble();
+        
+        sc.nextLine();
+       
+        //mostramos estado del prodcuto
+        System.out.print("Estado producto (Nuevo,Bueno,Aceptable): ");
+        
+        //esperamos estado en texto
+         estado = sc.nextLine();
+        
+         //aplicamos un descuento del 20% al estado bueno 
+        if (estado.equalsIgnoreCase("Bueno")){
+         
+            //realizamos calculo de precio * 0.20 -precio
+        precio = precio - precio * 0.20;
+        
+        }
+        
+        //Al estado aceptable aplicamos un descuento del 50%
+        else if (estado.equalsIgnoreCase("Aceptable")){
+        
+        // realizamos calculo de precio *0.50 - precio
+        precio = precio - precio * 0.50;
+        }
+        
+        //mostramos precio final
+        System.out.print("Precio final: " + precio);
+        
+    }
+    
+}
