@@ -1,1 +1,41 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercici2_projecteprovenshar;
 
+import java.util.Scanner;
+
+/**
+ *
+ * @author Caire
+ */
+public class Exercici2_projectePROVENSHAR {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        
+        
+        //mostramos los servicios que queramos contratar en esre caso Online y presencial
+        System.out.print("Que servicio quieres contratar: Online o Presencial = ");
+        
+        //esperamos respuesta 
+        String servicio = sc.nextLine();
+        
+        // mostramos cuando nos respondas Online 
+        if (servicio.equalsIgnoreCase("Online"))
+        {
+            System.out.println("Servicio configurado. enlace deseado");
+        }
+        
+        // mostramos lo contrario al Online en este caso Presencial
+        else {
+            System.out.println("Servicio configurado. Punto de encuentro deseado");
+        
+        }
+    }
+    
+}
