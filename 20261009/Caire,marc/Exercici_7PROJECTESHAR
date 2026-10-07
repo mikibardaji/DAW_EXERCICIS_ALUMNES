@@ -1,0 +1,60 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercici7_projectshar;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Caire
+ */
+public class Exercici7_PROJECTSHAR {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        
+        double preciolibro;
+        
+        
+        // mostramos precio total del libro
+        System.out.print("Precio total del libro: ");
+        
+        //esperamos precio libro
+        preciolibro = sc.nextDouble();
+        
+        
+        // mostamos si el precio es 0 o menor
+        if (preciolibro <= 0){
+            System.out.println("Error precio no valido");
+    
+        }
+        
+        // mostramos si el precio es menor a 15
+        else if(preciolibro < 15.0){
+           System.out.println("Preu excel·lent! És una ganga.");
+          }
+        
+        //mostamos si el precio es menor o igual a 35 
+        else if (preciolibro <= 35.0){
+            System.out.println("Preu estàndard i correcte per a un llibre.");
+        }
+        
+        // mostramos que si no cumple nada de lo anterior 
+        else {
+            System.out.println("Atenció: Aquest llibre té un preu superior a la mitjana.");
+        
+        
+        }
+    
+    
+    
+        
+        }
+    
+    
+}
