@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class ModalitatServei {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.class);
+        String modalitat;
+        String enlace;
+        String lloc;
+              
+        System.out.print("Prefereixes la modalitat 'Online' o 'Presencial'?: ");
+        
+        modalitat = scanner.nextLine();
+        
+        if (modalitat.equalsIgnoreCase("Online")) {
+        System.out.print("Introdueix l'enllaç de Discord/Meet: ");
+           enlace = scanner.nextLine();
+            System.out.println("Servei configurat. Enllaç desat.");
+            
+        } else if (modalitat.equalsIgnoreCase("Presencial")) 
+        
+            System.out.print("Introdueix l'aula o lloc de trobada: ");
+            String lloc = scanner.nextLine();
+            System.out.println("Servei configurat. Punt de trobada desat.");
+            
+        } else {
+            System.out.println("Opció no vàlida. Si us plau, tria 'Online' o 'Presencial'.");
+        }
