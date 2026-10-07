@@ -1,0 +1,66 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercici10_projecteshar;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Caire
+ */
+public class Exercici10_PROJECTESHAR {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        
+        //mostramos texto
+        String correo,estudio,extensión;
+        
+        
+        //mostramos correo electronico
+        System.out.print("Cual es tu correo electronico(sin extensión): ");
+        
+        //esperamos correo
+        correo = sc.nextLine();
+        
+        //mostramos extensiones
+        System.out.print("extensión (.edu/.es/.cat): ");
+        
+        //esperamos extensiones
+        extensión = sc.nextLine();
+        
+        
+        //mostramos lugar de estuidos
+        System.out.print("Lugar de estudio (Universidad/Instituto): ");
+        
+        //espermaos lugar de estudios
+        estudio = sc.nextLine();
+        
+        //SOLO ME SALE CON EL IF Y ELSE IF 
+        
+        //mostamos universidad y tanto como .edu y .cat estan correctos
+        if (estudio.equalsIgnoreCase("Univerisdad") && extensión.equalsIgnoreCase(".edu") || extensión.equalsIgnoreCase(".cat") ){
+            System.out.println("Correu oficial validat.");
+        }
+        // lo mismos pero con Instituto pero en este caso con .es y .cat
+        else if (estudio.equalsIgnoreCase("Instituo") && extensión.equalsIgnoreCase(".es") || extensión.equalsIgnoreCase(".cat")){
+        
+            System.out.println("Correu oficial validat.");
+         }
+        
+        //mostamos todo lo contrario si no es nada 
+        else {
+        
+            System.out.println("Error: L'extensió no correspon al teu centre d'estudis.");
+        }
+       
+        
+        
+    }
+    
+}
