@@ -1,0 +1,52 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package classe.ejercici5;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author gurleen
+ */
+public class Ejercici5 {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+       double preu, preufinal = 0, descuento;
+        String estat;
+
+        System.out.println("Cuanto es el preu?");
+        preu = teclado.nextDouble();
+
+        teclado.nextLine();
+
+        System.out.println("Como es Acceptable,Bo,Nou?");
+        estat = teclado.nextLine();
+
+        if (estat.equalsIgnoreCase("Acceptable"))
+        {
+            System.out.println("50% descuento");
+            descuento = preu * 0.50;
+            preufinal = preu - descuento;
+        }
+        else if (estat.equalsIgnoreCase("Bo"))
+        {
+            System.out.println("20% descuento");
+            descuento = preu * 0.20;
+            preufinal = preu - descuento;
+        }
+        else if (estat.equalsIgnoreCase("Nou"))
+        {
+            System.out.println("0%");
+            preufinal = preu;
+        }
+        else
+        {
+            System.out.println("Estado no valido");
+        }
+
+        System.out.println("Calcular " + preufinal  + estat);
+    }
+}
