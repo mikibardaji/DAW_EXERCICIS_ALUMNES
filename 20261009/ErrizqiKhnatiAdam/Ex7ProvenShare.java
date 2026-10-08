@@ -26,7 +26,7 @@ public class Ex7ProvenShare {
         
         missatge ="";
         if (preuLlibre <= 0){
-            missatge = "Error preu no vàlid";
+            missatge = "Error preu no valid";
         }
         else if (preuLlibre < 15) {
             missatge = "Preu excel·lent! Es una ganga.";
@@ -37,7 +37,7 @@ public class Ex7ProvenShare {
         } else if (preuLlibre > 35) {
             missatge = "Atencio: Aquest llibre te un preu superior a la mitjana.";
         } else {
-            missatge = "Introdueix un numero";
+            missatge = "Error preu no valid";
         }
         
         System.out.println(missatge);
