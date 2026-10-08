@@ -1,0 +1,41 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package classe.ejercicio10;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author gurleen
+ */
+public class Ejercicio10 {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        String correu,centre;
+       
+        System.out.println("Quin és el teu correu electrònic?");
+        correu = teclado.nextLine();
+       
+        System.out.println("On estudies? Universitat o Institut");
+        centre = teclado.nextLine();
+               
+       if(centre.equalsIgnoreCase("Universitat") && (correu.endsWith(".edu") || correu.endsWith(".cat")))
+       {
+           System.out.println("Correu oficial validat");
+       }
+       else if (centre.equalsIgnoreCase("Institut") && (correu.endsWith(".es") || correu.endsWith(".cat")))
+       {
+           System.out.println("Correu oficial validat");
+       }
+           else
+       {
+           System.out.println("Error: L'extensió no correspon al teu centre d'estudis.");
+           
+                     
+       }
+        System.out.println("correo es" + correu);
+    }
+}
