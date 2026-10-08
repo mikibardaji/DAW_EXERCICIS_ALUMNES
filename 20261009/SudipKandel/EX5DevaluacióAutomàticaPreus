@@ -1,0 +1,63 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package devaluacióautomàticapreusex5;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author kande
+ */
+public class DevaluacióAutomàticaPreusEX5 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+
+    // Variables
+    double preu;
+    double preuFinal;
+    String estat;
+
+    // Mostrar
+    System.out.print("Introdueix el preu original: ");
+
+    // Esperar
+    preu = sc.nextDouble();
+    sc.nextLine();
+
+    // Mostrar
+    System.out.print("Introdueix l'estat (Nou/Bo/Acceptable): ");
+
+    // Esperar
+    estat = sc.nextLine();
+
+    // Calcular / comprovar
+    if (estat.equalsIgnoreCase("Nou")) {
+
+        preuFinal = preu;
+
+    } else if (estat.equalsIgnoreCase("Bo")) {
+
+        preuFinal = preu * 0.80;
+
+    } else if (estat.equalsIgnoreCase("Acceptable")) {
+
+        preuFinal = preu * 0.50;
+
+    } else {
+
+        System.out.println("Estat no valid.");
+        return;
+    }
+
+    // Mostrar
+    System.out.println("El preu final és: " + preuFinal + " crèdits");
+}
+    }
+    
