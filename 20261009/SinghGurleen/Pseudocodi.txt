@@ -1,0 +1,111 @@
+Exercici 2: Modalitat de servei (Online vs Presencial)
+Un estudiant vol contractar un servei de classes particulars. El programa ha de demanar si prefereix la modalitat "Online" o "Presencial".
+Si tria "Online", el programa farà una segona pregunta per demanar l'enllaç de Discord/Meet i mostrarà: "Servei configurat. Enllaç desat."
+Si tria "Presencial", demanarà l'aula o lloc de trobada i mostrarà: "Servei configurat. Punt de trobada desat."
+
+Inici 
+Mostrar "Quina modalitat prefereixes: Online o Presencial" 
+Esperar servei Si servei és igual a "Online" Llavors 
+Mostrar "Servei configurat. Enllaç desat." Si no, si servei és igual a "Presencial" 
+Mostrar "Servei configurat. Punt de trobada desat." 
+Si no Mostrar "Modalitat no vàlida."
+Fi
+
+Exercici 5: Devaluació automàtica de preus
+Al catàleg, el preu original en crèdits d'un producte es redueix automàticament segons el seu estat de conservació. Demana el preu original (un decimal double) i l'estat ("Nou", "Bo", "Acceptable").
+Si és "Nou", el preu es manté igual (0% de descompte).
+Si és "Bo", s'aplica un 20% de descompte.
+Si és "Acceptable", s'aplica un 50% de descompte.
+Mostra el preu final calculat per pantalla.
+
+Inici 
+Mostrar "Quant és el preu?" 
+Esperar preu Mostrar "Com és? Acceptable, Bo o Nou?" 
+Esperar estat Si estat és igual a "Acceptable" 
+Mostrar "50% de descompte" Calcular descompte = preu * 0.50 
+Calcular preuFinal = preu - descompte Si no, si estat és igual a "Bo" Llavors 
+Mostrar "20% de descompte" Calcular descompte = preu * 0.20 
+Calcular preuFinal = preu - descompte Si no, si estat és igual a "Nou" Llavors Mostrar "0%" Calcular preuFinal = preu Si no Mostrar "Estat no vàlid" 
+Mostrar "Calcular " + preuFinal + estat Fi
+
+Exercici 7: Alerta de preus per a llibres de text (Variables Numèriques)
+Dins del catàleg de productes físics, volem ajudar els estudiants a saber si un llibre de text té un preu just, és una ganga o és massa car. Crea un programa que demani per teclat el preu d'un llibre en crèdits (un decimal double).
+Si l'import és menor de 15.0 crèdits, mostra: "Preu excel·lent! És una ganga."
+Si l'import està entre 15.0 i 35.0 crèdits (ambdós inclosos), mostra: "Preu estàndard i correcte per a un llibre."
+Si l'import és major de 35.0 crèdits, mostra: "Atenció: Aquest llibre té un preu superior a la mitjana."
+Si posa un valor enter, pero sense sentit (penseu quin) , mostra “Error preu no vàlid”
+
+Inici 
+Mostrar "Quin és el preu del llibre?" 
+Esperar preu 
+Si preu és menor o igual a 0 Llavors 
+Mostrar "Error preu no vàlid" 
+Si no, si preu és major o igual a 15.0 i menor o igual a 35.0 Llavors 
+Mostrar "Preu estàndard i correcte per a un llibre." 
+Si no, si preu és menor que 15.0 Llavors 
+Mostrar "Preu excel·lent! És una ganga." 
+Si no, si preu és major que 35.0 Llavors 
+Mostrar "Aquest llibre té un preu superior a la mitjana." 
+Fi
+
+Exercici 9: Disponibilitat horària d'un Servei
+Un usuari vol reservar una tutoria de programació. El servei només es pot fer si encaixa en els horaris de l'expert. Demana la franja que vol l'alumne ("Mati" o "Tarda") i la modalitat ("Online" o "Presencial").
+L'expert només treballa sota aquestes condicions: al matí només fa serveis Online, i a la tarda només fa serveis Presencials.
+Si la combinació introduïda és correcta, mostra: "Reserva confirmada amb l'expert."
+Si no coincideix, mostra: "L'expert no està disponible en aquesta franja per a aquesta modalitat."
+
+Inici 
+Mostrar "Quina franja prefereixes: Mati o Tarda?" 
+Esperar franja 
+Mostrar "Quina modalitat prefereixes: Online o Presencial?" 
+Esperar modalitat Si franja és igual a "Mati" i modalitat és igual a "Online" 
+Mostrar "Reserva confirmada amb l'expert." 
+Si no, si franja és igual a "Tarda" i modalitat és igual a "Presencial" 
+Mostrar "Reserva confirmada amb l'expert." 
+Si no 
+Mostrar "L'expert no està disponible en aquesta franja per a aquesta modalitat." 
+Fi
+
+Exercici 10: Validació del correu oficial (El registre)
+Per registrar-se a ProvenShare, el correu electrònic de l'usuari ha de ser oficial de la universitat o de l'institut. Demana a l'usuari el seu correu electrònic (un String) i el seu lloc d'estudis ("Universitat" o "Institut").
+(Pista: Com que estem al principi del curs, farem que l'estudiant introdueixi l'extensió del correu, per exemple ".edu" o ".cat", per separat de la resta del text).
+Si estudia a la "Universitat", l'extensió ha de ser obligatòriament ".edu" o ".cat".
+Si estudia a l'Institut, l'extensió ha de ser obligatòriament ".es" o ".cat".
+Si es compleix, mostra: "Correu oficial validat.". Si no, mostra: "Error: L'extensió no correspon al teu centre d'estudis."
+
+Inici 
+Mostrar "Quin és el teu correu electrònic?" 
+Esperar correu 
+Mostrar "On estudies? Universitat o Institut" 
+Esperar centre 
+Mostrar "Quina és l'extensió del teu correu?” 
+Esperar extensió Si centre és igual a "Universitat" i (extensió és igual a ".edu" o extensió és igual a ".cat") 
+Mostrar "Correu oficial validat." 
+Si no
+Si centre és igual a "Institut" i (extensió és igual a ".es" o extensió és igual a ".cat") 
+Mostrar "Correu oficial validat." 
+Si no 
+Mostrar "Error: L'extensió no correspon al teu centre d'estudis." 
+Fi
+
+Exercici 11: Validació de durada i franja horària (Variables Numèriques)
+Un estudiant vol oferir un servei de classes de programació. El programa li demanarà dos valors numèrics: l'hora d'inici (un sencer de 0 a 23) i la durada estimada del servei en minuts (un sencer).
+Perquè el servei es pugui publicar, ha de complir les dues condicions següents:
+L'hora d'inici ha de ser com a mínim a les 8 i com a màxim a les 20 (per evitar serveis nocturns).
+La durada del servei no pot superar els 120 minuts (2 hores).
+Si es compleixen ambdues condicions, mostra el missatge: "Servei acceptat. S'ha publicat correctament al catàleg."
+Si l'hora és incorrecta però la durada és bona, mostra: "Error: L'hora d'inici ha d'estar entre les 8h i les 20h."
+Si l'hora és bona però la durada és excessiva, mostra: "Error: La durada del servei no pot superar els 120 minuts."
+Si no en compleix cap de les dues, mostra: "Error: L'hora i la durada introduïdes no són vàlides."
+
+Inici 
+Mostrar "Quina és l'hora d'inici?" 
+Esperar hora 
+Mostrar "Quina és la durada del servei en minuts?" 
+Esperar durada Si hora és major o igual a 8 i hora és menor o igual a 20 i durada és menor o igual a 120 
+Mostrar "Servei acceptat. S'ha publicat correctament al catàleg." Si no, si hora és menor que 8 o hora és major que 20 i durada és menor o igual a 120 
+Mostrar "Error: L'hora d'inici ha d'estar entre les 8h i les 20h." 
+Si no, si hora és major o igual a 8 i hora és menor o igual a 20 i durada és major que 120 Mostrar "Error: La durada del servei no pot superar els 120 minuts." 
+Si no 
+Mostrar "Error: L'hora i la durada introduïdes no són vàlides." 
+Fi
