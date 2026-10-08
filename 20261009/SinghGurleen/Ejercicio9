@@ -1,0 +1,36 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package classe.ejercicio9;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author gurleen
+ */
+public class Ejercicio9 {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        String hora;
+        String servei;
+       
+        System.out.println("Quina franja prefereixes: Mati o Tarda?");
+        hora = teclado.nextLine();
+       
+        System.out.println("Quina modalitat prefereixes: Online o Presencial?");
+        servei = teclado.nextLine();
+       
+        if ((hora.equalsIgnoreCase("Mati") && servei.equalsIgnoreCase("Online")) || (hora.equalsIgnoreCase("Tarda") && servei.equalsIgnoreCase("Presencial")))
+        {
+            System.out.println("Reserva confirmada amb l'expert");
+        }
+        else
+        {
+            System.out.println("L'expert no està disponible en aquesta franja per a aquesta modalitat");
+        }
+       
+    }
+}
