@@ -1,0 +1,39 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package classe.ejercicio7;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author gurleen
+ */
+public class Ejercicio7 {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        double preu;
+     
+        System.out.println("Quin és el preu del llibre?");
+        preu = teclado.nextDouble();
+       
+        if (preu<=0)
+        {
+            System.out.println("Error preu no vàlid");
+        }
+        else if (preu>=15.0 && preu<= 35.00)
+        {
+            System.out.println( "Preu estàndard i correcte per a un llibre.");
+        }
+        else if (preu<15.0)
+        {
+                System.out.println("Preu excel·lent! És una ganga.");
+                }
+        else if (preu > 35.0)
+        {
+            System.out.println("Aquest llibre té un preu superior a la mitjana.");
+        }
+    }
+}
