@@ -28,19 +28,19 @@ public class ValidacioCorreoEX10 {
         System.out.print("Introdueix el teu correu electronic: ");
 
         // ESPERAR
-        correu = sc.nextLine().trim();
+        correu = sc.nextLine();
 
         // MOSTRAR
         System.out.print("Introdueix el teu lloc d'estudis (Universitat/Institut): ");
 
         // ESPERAR
-        llocEstudis = sc.nextLine().trim();
+        llocEstudis = sc.nextLine();
 
         // MOSTRAR
         System.out.print("Introdueix l'extensio (.edu/.cat/.es): ");
 
         // ESPERAR
-        extensio = sc.nextLine().trim();
+        extensio = sc.nextLine();
 
         // CALCULAR
         if (llocEstudis.equalsIgnoreCase("Universitat")
