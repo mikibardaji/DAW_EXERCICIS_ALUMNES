@@ -18,7 +18,7 @@ public class Ex10ValidacióDelCorreuOficialElRegistreConswitch {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // VARIABLES
+      // VARIABLES
         String correu;
         String llocEstudis;
         String extensio;
@@ -27,33 +27,33 @@ public class Ex10ValidacióDelCorreuOficialElRegistreConswitch {
         System.out.print("Introdueix el teu correu electronic: ");
 
         // ESPERAR
-        correu = sc.nextLine().trim();
+        correu = sc.nextLine();
 
         // MOSTRAR
         System.out.print("Introdueix el teu lloc d'estudis (Universitat/Institut): ");
 
         // ESPERAR
-        llocEstudis = sc.nextLine().trim();
+        llocEstudis = sc.nextLine();
 
         // MOSTRAR
         System.out.print("Introdueix l'extensio (.edu/.cat/.es): ");
 
         // ESPERAR
-        extensio = sc.nextLine().trim();
+        extensio = sc.nextLine();
 
         // CALCULAR
         switch (llocEstudis.toLowerCase()) {
 
-              case "universitat" -> {
-                  if (extensio.equalsIgnoreCase(".edu")
-                          || extensio.equalsIgnoreCase(".cat")) {
-                      
-                      System.out.println("Correu oficial validat.");
-                      
-                  } else {
-                      
-                      System.out.println("Error: L'extensio no correspon al teu centre d'estudis.");
-                  }
+            case "universitat" -> {
+                if (extensio.equalsIgnoreCase(".edu")
+                        || extensio.equalsIgnoreCase(".cat")) {
+
+                    System.out.println("Correu oficial validat.");
+
+                } else {
+
+                    System.out.println("Error: L'extensio no correspon al teu centre d'estudis.");
+                }
             }
 
             case "institut" -> {
@@ -68,8 +68,7 @@ public class Ex10ValidacióDelCorreuOficialElRegistreConswitch {
                 }
             }
 
-            default -> System.out.println("Lloc d'estudis no valid.");
+            default  System.out.println("Lloc d'estudis no valid.");
         }
     }
 }
-    
