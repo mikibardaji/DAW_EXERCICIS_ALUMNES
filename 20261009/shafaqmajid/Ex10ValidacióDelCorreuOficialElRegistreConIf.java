@@ -19,46 +19,42 @@ public class Ex10ValidacióDelCorreuOficialElRegistreConIf {
          Scanner sc = new Scanner(System.in);
 
         // VARIABLES
-        String correu;
-        String llocEstudis;
-        String extensio;
+String correu;
+String llocEstudis;
+String extensio;
 
-        // MOSTRAR
-        System.out.print("Introdueix el teu correu electronic: ");
+// MOSTRAR
+System.out.print("Introdueix el teu correu electronic: ");
 
-        // ESPERAR
-        correu = sc.nextLine().trim();
+// ESPERAR
+correu = sc.nextLine();
 
-        // MOSTRAR
-        System.out.print("Introdueix el teu lloc d'estudis (Universitat/Institut): ");
+// MOSTRAR
+System.out.print("Introdueix el teu lloc d'estudis (Universitat/Institut): ");
 
-        // ESPERAR
-        llocEstudis = sc.nextLine().trim();
+// ESPERAR
+llocEstudis = sc.nextLine();
 
-        // MOSTRAR
-        System.out.print("Introdueix l'extensio (.edu/.cat/.es): ");
+// MOSTRAR
+System.out.print("Introdueix l'extensio (.edu/.cat/.es): ");
 
-        // ESPERAR
-        extensio = sc.nextLine().trim();
+// ESPERAR
+extensio = sc.nextLine();
 
-        // CALCULAR
-        if (llocEstudis.equalsIgnoreCase("Universitat")
-                && (extensio.equalsIgnoreCase(".edu")
-                || extensio.equalsIgnoreCase(".cat"))) {
+// CALCULAR
+if (llocEstudis.equalsIgnoreCase("Universitat")
+        && (extensio.equalsIgnoreCase(".edu")
+        || extensio.equalsIgnoreCase(".cat"))) {
 
-            System.out.println("Correu oficial validat.");
+    System.out.println("Correu oficial validat.");
 
-        } else if (llocEstudis.equalsIgnoreCase("Institut")
-                && (extensio.equalsIgnoreCase(".es")
-                || extensio.equalsIgnoreCase(".cat"))) {
+} else if (llocEstudis.equalsIgnoreCase("Institut")
+        && (extensio.equalsIgnoreCase(".es")
+        || extensio.equalsIgnoreCase(".cat"))) {
 
-            System.out.println("Correu oficial validat.");
+    System.out.println("Correu oficial validat.");
 
-        } else {
+} else {
 
-            System.out.println("Error: L'extensio no correspon al teu centre d'estudis.");
-        }
-    }
+    System.out.println("Error: L'extensio no correspon al teu centre d'estudis.");
 }
-    
-
