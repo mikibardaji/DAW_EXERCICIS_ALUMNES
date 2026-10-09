@@ -20,8 +20,7 @@ public class Ex9DisponibilitatHoràriaDUnServeiConif {
 
      
         // VARIABLES
-        String franja;
-        String modalitat;
+        String franja, modalitat;
 
         // MOSTRAR
         System.out.print("Introdueix la franja (Mati/Tarda): ");
