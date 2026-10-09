@@ -17,8 +17,7 @@ public class Ex9DisponibilitatHoràriaDUnServeiConSwitch {
      */
     public static void main(String[] args) {
          Scanner sc = new Scanner(System.in);
-
-        // VARIABLES
+ // VARIABLES
         String franja;
         String modalitat;
         String combinacio;
@@ -27,25 +26,27 @@ public class Ex9DisponibilitatHoràriaDUnServeiConSwitch {
         System.out.print("Introdueix la franja (Mati/Tarda): ");
 
         // ESPERAR
-        franja = sc.nextLine().trim();
+        franja = sc.nextLine();
 
         // MOSTRAR
         System.out.print("Introdueix la modalitat (Online/Presencial): ");
 
         // ESPERAR
-        modalitat = sc.nextLine().trim();
+        modalitat = sc.nextLine();
 
         // CALCULAR
         combinacio = franja.toLowerCase() + "-" + modalitat.toLowerCase();
 
         switch (combinacio) {
 
-            case "mati-online" -> System.out.println("Reserva confirmada amb l'expert.");
+            case "mati-online" ->
+                System.out.println("Reserva confirmada amb l'expert.");
 
-            case "tarda-presencial" -> System.out.println("Reserva confirmada amb l'expert.");
+            case "tarda-presencial" ->
+                System.out.println("Reserva confirmada amb l'expert.");
 
-            default -> System.out.println("L'expert no esta disponible en aquesta franja per a aquesta modalitat.");
+            default ->
+                System.out.println("L'expert no esta disponible en aquesta franja per a aquesta modalitat.");
         }
     }
-    
 }
