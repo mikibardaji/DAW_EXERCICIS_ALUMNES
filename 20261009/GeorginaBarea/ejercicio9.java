@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class ejercicio9 {
     public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
+        Scanner teclado = new Scanner(System.in); 
         String franja, modalidad;
        
         System.out.println("Quina franja vols?(Mati/Tarda)");
