@@ -18,9 +18,7 @@ public class Ex9DisponibilitatHoràriaDUnServeiConSwitch {
     public static void main(String[] args) {
          Scanner sc = new Scanner(System.in);
  // VARIABLES
-        String franja;
-        String modalitat;
-        String combinacio;
+        String franja, modalitat, combinacio;
 
         // MOSTRAR
         System.out.print("Introdueix la franja (Mati/Tarda): ");
