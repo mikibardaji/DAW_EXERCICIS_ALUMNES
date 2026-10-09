@@ -19,10 +19,8 @@ public class Ex5DevaluacióAutomàticaDePreusConSwitch {
    
         Scanner sc = new Scanner(System.in);
 
-        // Variables
-        double preuOriginal;
-        double descompte = 0;
-        double preuFinal;
+        // VARIABLES
+        double preuOriginal, descompte = 0, preuFinal;
         String estat;
 
         // MOSTRAR
@@ -36,7 +34,7 @@ public class Ex5DevaluacióAutomàticaDePreusConSwitch {
         System.out.print("Introdueix l'estat (Nou / Bo / Acceptable): ");
 
         // ESPERAR
-        estat = sc.nextLine().trim();
+        estat = sc.nextLine();
 
         // CALCULAR
         switch (estat.toLowerCase()) {
@@ -58,12 +56,10 @@ public class Ex5DevaluacióAutomàticaDePreusConSwitch {
                 return;
         }
 
+        // CALCULAR
         preuFinal = preuOriginal - (preuOriginal * descompte);
 
         // MOSTRAR
         System.out.println("Preu final: " + preuFinal + " credits");
     }
 }
-    
-    
-
