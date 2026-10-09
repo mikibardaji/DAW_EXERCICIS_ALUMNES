@@ -19,9 +19,7 @@ public class Ex10ValidacióDelCorreuOficialElRegistreConIf {
          Scanner sc = new Scanner(System.in);
 
         // VARIABLES
-String correu;
-String llocEstudis;
-String extensio;
+String correu, llocEstudis, extensio;
 
 // MOSTRAR
 System.out.print("Introdueix el teu correu electronic: ");
