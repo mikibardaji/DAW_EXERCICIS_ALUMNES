@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author gba0006
+ * @author gba0006 
  */
 public class ejercicio7 {
     public static void main(String[] args) {
@@ -17,11 +17,11 @@ public class ejercicio7 {
         System.out.println("Quant val el llibre: ");
         preu = teclado.nextDouble();
         if (preu < 15) {
-            System.out.println("Preu excel·lent!");
+            System.out.println("Preu excelÂ·lent!");
         }else if (preu >= 15 && preu <= 35) {
             System.out.println("Preu correcte.");
         }else if (preu > 35 && preu < 50) {
-            System.out.println("Atenció: Aquest llibre té un preu superioru.");
+            System.out.println("AtenciÃ³: Aquest llibre tÃ© un preu superioru.");
         }else if (preu > 50) {
             System.out.println("Preu no v?lid");}
     }
