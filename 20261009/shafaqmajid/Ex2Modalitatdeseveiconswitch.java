@@ -19,9 +19,7 @@ public class Ex2Modalitatdeseveiconswitch {
          Scanner sc = new Scanner(System.in);
 
         // Variables
-        String modalitat;
-        String enllac = "";
-        String lloc = "";
+        String modalitat, enllac,  lloc ;
 
         // MOSTRAR
         System.out.print("Quina modalitat prefereixes? (Online / Presencial): ");
