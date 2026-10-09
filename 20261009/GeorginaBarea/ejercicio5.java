@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author gba0006
  */
-public class ejercicio5 {
+public class ejercicio5 {  
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         double preuOriginal, descompte, preuFinal;
@@ -24,15 +24,15 @@ public class ejercicio5 {
         
         if (estatProducte.equalsIgnoreCase("Nou")) {
             preuFinal = preuOriginal;
-            frase = "El preu final es de " + preuFinal + "€";
+            frase = "El preu final es de " + preuFinal + "â‚¬";
         } else if (estatProducte.equalsIgnoreCase("Bo")){
             descompte = preuOriginal * 0.2;
             preuFinal = preuOriginal - descompte;
-           frase = "El preu final es de " + preuFinal + "€";
+           frase = "El preu final es de " + preuFinal + "â‚¬";
         }  else if (estatProducte.equalsIgnoreCase("Acceptable")){
             descompte = preuOriginal * 0.5;
             preuFinal = preuOriginal - descompte;
-            frase = "El preu final es de " + preuFinal + "€";
+            frase = "El preu final es de " + preuFinal + "â‚¬";
         } else {
             frase = "Error";
         }
