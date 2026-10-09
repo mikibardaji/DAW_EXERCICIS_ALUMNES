@@ -18,9 +18,7 @@ public class Ex2Modalitatdeservei {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
        // Variables
-        String modalitat;
-        String enllac;
-        String lloc;
+        String modalitat, enllac, lloc;
 
         // Mostrar
         System.out.print("Introdueix la modalitat (Online/Presencial): ");
