@@ -18,6 +18,7 @@ public class Ex9DisponibilitatHoràriaDUnServeiConif {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+     
         // VARIABLES
         String franja;
         String modalitat;
@@ -26,22 +27,22 @@ public class Ex9DisponibilitatHoràriaDUnServeiConif {
         System.out.print("Introdueix la franja (Mati/Tarda): ");
 
         // ESPERAR
-        franja = sc.nextLine().trim();
+        franja = sc.nextLine();
 
         // MOSTRAR
         System.out.print("Introdueix la modalitat (Online/Presencial): ");
 
         // ESPERAR
-        modalitat = sc.nextLine().trim();
+        modalitat = sc.nextLine();
 
         // CALCULAR
-        if (franja.equalsIgnoreCase("Mati") &&
-            modalitat.equalsIgnoreCase("Online")) {
+        if (franja.equalsIgnoreCase("Mati")
+                && modalitat.equalsIgnoreCase("Online")) {
 
             System.out.println("Reserva confirmada amb l'expert.");
 
-        } else if (franja.equalsIgnoreCase("Tarda") &&
-                   modalitat.equalsIgnoreCase("Presencial")) {
+        } else if (franja.equalsIgnoreCase("Tarda")
+                && modalitat.equalsIgnoreCase("Presencial")) {
 
             System.out.println("Reserva confirmada amb l'expert.");
 
@@ -51,6 +52,3 @@ public class Ex9DisponibilitatHoràriaDUnServeiConif {
         }
     }
 }
-    
-    
-
