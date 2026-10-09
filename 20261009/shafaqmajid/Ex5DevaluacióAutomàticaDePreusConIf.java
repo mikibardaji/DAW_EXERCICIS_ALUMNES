@@ -35,7 +35,7 @@ public class Ex5DevaluacióAutomàticaDePreusConIf {
         System.out.print("Introdueix l'estat (Nou / Bo / Acceptable): ");
 
         // ESPERAR
-        estat = sc.nextLine().trim();
+        estat = sc.nextLine();
 
         // CALCULAR
         if (estat.equalsIgnoreCase("Nou")) {
