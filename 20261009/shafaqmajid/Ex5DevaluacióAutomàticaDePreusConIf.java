@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package ex5devaluaciÛautom‡ticadepreusconif;
+package ex5devaluaci√≥autom√†ticadepreusconif;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author smo9104
  */
-public class Ex5DevaluaciÛAutom‡ticaDePreusConIf {
+public class Ex5Devaluaci√≥Autom√†ticaDePreusConIf {
 
     /**
      * @param args the command line arguments
@@ -19,9 +19,7 @@ public class Ex5DevaluaciÛAutom‡ticaDePreusConIf {
       Scanner sc = new Scanner(System.in);
 
         // Variables
-        double preuOriginal;
-        double descompte = 0;
-        double preuFinal;
+        double preuOriginal, descompte = 0, preuFinal;
         String estat;
         boolean estadoCorrecto = true;
 
@@ -53,7 +51,7 @@ public class Ex5DevaluaciÛAutom‡ticaDePreusConIf {
 
         } else {
 
-            System.out.println("Estat no v‡lid.");
+            System.out.println("Estat no v√†lid.");
             estadoCorrecto = false;
         }
 
