@@ -23,7 +23,7 @@ public class Exercisis1009 {
         if (modalitat.equalsIgnoreCase("Online")) {
             System.out.println("Introdueix l'enlla? de Meet/Discord: ");
             enlace=teclado.nextLine();
-            frase="Servei configurat. Enlla? guardat";          
+            frase="Servei configurat. Enlla? guardat";             
             
         }else if (modalitat.equalsIgnoreCase("Presencial")) {
             System.out.println("Introdueix l'ubicacio on es: ");
