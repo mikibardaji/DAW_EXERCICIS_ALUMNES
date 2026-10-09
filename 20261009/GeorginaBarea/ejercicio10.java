@@ -14,7 +14,7 @@ public class ejercicio10 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         String correu, llocEstudis, frase=null;
-        Scanner scan=new Scanner (System.in);
+        Scanner scan=new Scanner (System.in); 
         System.out.println("Introdueix el teu correu electronic: ");
         correu=scan.nextLine();
         System.out.println("Estas a la Universitat o en un Institut?: ");
@@ -27,7 +27,7 @@ public class ejercicio10 {
             frase="Correu oficial validat.";
             
         }else{
-            frase="Error: L'extensió no correspon al teu centre d'estudis.";
+            frase="Error: L'extensiÃ³ no correspon al teu centre d'estudis.";
         
         }
         System.out.println(frase);
