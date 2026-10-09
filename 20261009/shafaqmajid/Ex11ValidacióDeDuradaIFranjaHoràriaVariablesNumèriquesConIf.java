@@ -19,8 +19,7 @@ public class Ex11ValidacióDeDuradaIFranjaHoràriaVariablesNumèriquesConIf {
         Scanner sc = new Scanner(System.in);
 
         // VARIABLES
-        int horaInici;
-        int durada;
+        int horaInici, durada;
 
         // MOSTRAR
         System.out.print("Introdueix l'hora d'inici (0-23): ");
