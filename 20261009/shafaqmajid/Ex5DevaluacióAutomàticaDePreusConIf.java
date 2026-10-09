@@ -2,27 +2,28 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package ex5devaluaci√≥.autom√†tica.de.preus.con.pkgif;
+package ex5devaluaciÛautom‡ticadepreusconif;
 
 import java.util.Scanner;
 
 /**
  *
- * @author Usuario
+ * @author smo9104
  */
-public class Ex5Devaluaci√≥Autom√†ticaDePreusConIf {
+public class Ex5DevaluaciÛAutom‡ticaDePreusConIf {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-         Scanner sc = new Scanner(System.in);
+      Scanner sc = new Scanner(System.in);
 
         // Variables
         double preuOriginal;
         double descompte = 0;
         double preuFinal;
         String estat;
+        boolean estadoCorrecto = true;
 
         // MOSTRAR
         System.out.print("Introdueix el preu original: ");
@@ -52,16 +53,19 @@ public class Ex5Devaluaci√≥Autom√†ticaDePreusConIf {
 
         } else {
 
-            System.out.println("Estat no valid.");
-            return;
+            System.out.println("Estat no v‡lid.");
+            estadoCorrecto = false;
         }
 
-        preuFinal = preuOriginal - (preuOriginal * descompte);
+        // CALCULAR
+        if (estadoCorrecto == true) {
 
-        // MOSTRAR
-        System.out.println("Preu final: " + preuFinal + " credits");
+            preuFinal = preuOriginal - (preuOriginal * descompte);
+
+            // MOSTRAR
+            System.out.println("Preu final: " + preuFinal + " credits");
+        }
     }
 }
-    
     
 
