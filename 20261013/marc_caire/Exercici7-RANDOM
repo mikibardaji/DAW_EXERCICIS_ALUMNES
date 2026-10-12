@@ -1,1 +1,40 @@
 
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercicirandoms_7projecteshar;
+
+import java.util.Random;
+
+/**
+ *
+ * @author Caire
+ */
+public class ExerciciRANDOMS_7PROJECTESHAR {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Random random = new Random();
+        
+        // mostramos el numero de la carta del 1 al 12
+        
+        int numero = random.nextInt(13);
+        
+        //mostramos los palo
+        int palonum = random.nextInt(4);
+        
+        // convertimos el numeor de plo a texto
+        
+        String palo = " Oros ";
+        if (palonum ==1) palo = "Copas";
+        if (palonum ==2) palo = "Espadas";
+        if (palonum ==3) palo = "Bastos";
+        
+        //y por ultimo motramos la carta
+        System.out.println("Te ha salido: " + numero + "de" + palo);
+    }
+    
+}
