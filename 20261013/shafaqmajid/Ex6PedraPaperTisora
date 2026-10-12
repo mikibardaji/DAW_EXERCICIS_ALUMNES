@@ -1,0 +1,82 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ex6pedrapapertisora;
+
+import java.util.Random;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Usuario
+ */
+public class Ex6PedraPaperTisora {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+        Random random = new Random();      
+        String nomUsuario, text, nomOrdenador; 
+        int ordenador, usuario;                  
+        char jugada;            
+        // MOstrar (Pedimos la jugada)
+        System.out.print("Elige tu jugada (S: Piedra, P: Papel, T: Tijera): ");
+        text = scanner.next();
+        jugada = text.charAt(0);
+
+        // Convertimos la letra a número y nombre
+        if (jugada == 'S')
+           {
+            usuario = 0;
+            nomUsuario = "Piedra";
+           }
+        else if (jugada == 'P') 
+           {
+            usuario = 1;
+            nomUsuario = "Papel";
+           }
+        else 
+           {
+            usuario = 2;
+            nomUsuario = "Tijera";
+           }
+
+        // El ordenador elige un número aleatorio (0, 1 o 2)
+        ordenador = random.nextInt(3);
+
+        if (ordenador == 0) 
+          {
+            nomOrdenador = "Piedra";
+          } 
+        else if (ordenador == 1) 
+          {
+            nomOrdenador = "Papel";
+          } 
+        else 
+          {
+            ordenador = 2;
+            nomOrdenador = "Tijera";
+          }
+
+        // Mostramos las jugadas
+        System.out.println(" Tu has elegido: " + nomUsuario);
+        System.out.println(" El ordenador ha elegido: " + nomOrdenador);
+        
+        // Determinamos el resultado
+        if (usuario == ordenador) 
+          {
+            System.out.println(" Resultado: ¡Empate!");
+          } 
+        else if ((usuario == 0 && ordenador == 2)|| (usuario == 1 && ordenador == 0)|| (usuario == 2 && ordenador == 1)) 
+          {
+            System.out.println(" Resultado: ¡Has ganado tu!");
+          }
+        else
+          {
+            System.out.println(" Resultado: ¡Ha ganado el ordenador!");
+          }
+        }
+    }
