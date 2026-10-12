@@ -18,7 +18,7 @@ public class ExerciciRANDOMS_7PROJECTESHAR {
      */
     public static void main(String[] args) {
         Random random = new Random();
-        
+        //BARAJA ESPAÑOLA
         // mostramos el numero de la carta del 1 al 12
         
         int numero = random.nextInt(13);
