@@ -1,0 +1,72 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercicisrandoms_6projecteshar;
+
+import java.util.Random;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Caire
+ */
+public class ExercicisRANDOMS_6PROJECTESHAR {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+
+        
+        // Mostramos la jugada
+        System.out.print("Tria la teva jugada (S: Pedra, P: Paper, T: Tisora): ");
+        
+        // guardamos con el char la letra 
+        char jugador = scanner.next().charAt(0);
+
+        
+        // genearmos un num alazar del 0 al 2
+        int num = random.nextInt(3);
+        
+        // si por defecto el ordenador saca piedra 
+        char ordinador = 'S';
+        
+        // si sale igual a 1 mostramos papel
+        if (num == 1) ordinador = 'P';
+        
+        
+        // si sale iguala 2 mostramos tijeras        
+        if (num == 2) ordinador = 'T';
+
+        
+        // si por defecto el nombre es piedra 
+        String nomJugador = "Pedra";
+        
+        // si el jugador elige p, es papel
+        if (jugador == 'P') nomJugador = "Paper";
+        
+        // y si eligio T, es tijera
+        if (jugador == 'T') nomJugador = "Tisora";
+
+        // si por defecto es piedra
+        String nomOrdinador = "Pedra";
+        
+        //el ordenador saca p, es papel
+        if (ordinador == 'P') nomOrdinador = "Paper";
+        
+        // si saca T, es tijera
+        if (ordinador == 'T') nomOrdinador = "Tisora";
+
+        
+        // mostramos la jugada del jugador
+        System.out.println("Tu has triat: " + nomJugador);
+        
+        //mostramos la jugada del ordenador
+        System.out.println("L'ordinador ha triat: " + nomOrdinador);
+
+        
+    }
+}
