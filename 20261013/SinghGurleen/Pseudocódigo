@@ -1,0 +1,61 @@
+6. Pedra / Paper / Tisora
+
+Inici
+Si jugador és igual a ordenador 
+Mostrar "Resultat: Empat!"
+Si no, si jugador és igual a 'S' i ordenador és igual a 'T'
+Mostrar "Resultat: Has guanyat tu!"
+Si no, si jugador és igual a 'P' i ordenador és igual a 'S'
+Mostrar "Resultat: Has guanyat tu!"
+Si no, si jugador és igual a 'T' i ordenador és igual a 'P'
+Mostrar "Resultat: Has guanyat tu!"
+Si no
+Mostrar "Resultat: Ha guanyat l'ordinador!"
+Mostrar "Tret: " + jugador
+Mostrar "Tret: " + ordenador
+Fi
+
+7. Cartes
+Fes un programa que amb més d’un aleatori, et tregui una carta, i et digui quina t’ha sortit.
+Contar que s’haura de triar el numero i el pal. El tipus de joc de cartes potser la que vulguis, la espanyola o les de poker.
+
+Inici
+Calcular un número aleatori entre 1 i 13
+Si num és igual a 1 
+carta = "A"
+Si no, si num és igual a 2 
+carta = "2"
+Si no, si num és igual a 3 
+carta = "3"
+Si no, si num és igual a 4 
+carta = "4"
+Si no, si num és igual a 5 
+carta = "5"
+Si no, si num és igual a 6 
+carta = "6"
+Si no, si num és igual a 7 
+carta = "7"
+Si no, si num és igual a 8 
+carta = "8"
+Si no, si num és igual a 9 
+carta = "9"
+Si no, si num és igual a 10 
+carta = "10"
+Si no, si num és igual a 11 
+carta = "J"
+Si no, si num és igual a 12 
+carta = "Q"
+Si no
+carta = "K"
+Calcular un símbol aleatori entre 1 i 4
+Si simb és igual a 1 
+tipuscarta = "Rombos"
+Si no, si simb és igual a 2 
+tipuscarta = "Corazones"
+Si no, si simb és igual a 3 
+tipuscarta = "Picas"
+Si no
+tipuscarta = "Treboles"
+Mostrar carta + " de " + simbolo
+Fi
+
