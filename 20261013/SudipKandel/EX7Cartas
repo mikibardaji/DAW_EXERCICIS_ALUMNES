@@ -1,0 +1,57 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ex7cartas;
+
+import java.util.Random;
+
+/**
+ *
+ * @author kande
+ */
+public class Ex7Cartas {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+
+        Random rand = new Random();
+        String nomNumero, nomPalo;
+        int numero, palo;
+
+// Primer aleatorio: el número
+        numero = rand.nextInt(1, 13);
+
+// Segundo aleatorio: el palo
+        palo = rand.nextInt(1, 5);
+
+// Condición para asignar el nombre de la carta
+        if (numero == 1) {
+            nomNumero = "As";
+        } else if (numero == 10) {
+            nomNumero = "Sota";
+        } else if (numero == 11) {
+            nomNumero = "Caballo";
+        } else if (numero == 12) {
+            nomNumero = "Rey";
+        } else {
+            nomNumero = "" + numero;
+        }
+
+// Condición para asignar el nombre del palo
+        if (palo == 1) {
+            nomPalo = "Oros";
+        } else if (palo == 2) {
+            nomPalo = "Copas";
+        } else if (palo == 3) {
+            nomPalo = "Espadas";
+        } else {
+            nomPalo = "Bastos";
+        }
+
+        System.out.println("Te ha salido: " + nomNumero + " de " + nomPalo);
+    }
+}
