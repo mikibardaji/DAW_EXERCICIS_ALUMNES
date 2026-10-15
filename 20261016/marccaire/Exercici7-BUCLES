@@ -1,0 +1,54 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercici7_bucles;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Caire
+ */
+public class Exercici7_BUCLES {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner (System.in);
+        
+        int positivo = 0;
+        int negativo = 0;
+        int contador =1;
+       
+        
+        while (contador <=10){ // repetimos mierntras el codigo sea cierto
+           
+            // msotramos un numero
+            System.out.println("Escribe el numero que quieras");
+           
+            // esperamos numero
+            int numero = teclado.nextInt();
+           
+            // si el numero es mayor que 0 se agregara en positivo
+         if (numero >0){
+         positivo = positivo +1;
+         }
+         // lo contrario se agregara en negativo
+         else {
+         negativo = negativo +1;
+         
+         }
+         
+         // mostraremos positivo o negativo con lo que correspona
+            System.out.println("Positivo" + positivo);
+            System.out.println("Negativo" + negativo);
+             
+        
+        }
+        
+        
+    }
+    
+}
