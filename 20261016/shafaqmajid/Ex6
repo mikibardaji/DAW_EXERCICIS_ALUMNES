@@ -1,0 +1,44 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ex6;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Usuario
+ */
+public class Ex6 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int numero;
+        boolean hayNegativo = false;
+
+        // Para repetir 10 veces
+        for (int i = 1; i <= 10; i++) {
+
+        //  para pedir un numero
+            System.out.print("Introduce el numero " + i + ": ");
+            numero = sc.nextInt();
+
+        //  para comprobar si el numero es negativo
+           if (numero < 0) {
+                hayNegativo = true;
+            }
+        }
+
+        // para indicar si hay algun negativo
+        if (hayNegativo) {
+            System.out.println("Se ha leído algún numero negativo.");
+        } else {
+            System.out.println("No se ha leído ningun numero negativo.");
+        }
+    }
+}
