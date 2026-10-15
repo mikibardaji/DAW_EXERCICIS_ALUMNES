@@ -2,105 +2,111 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package eje_condicionalesrandom.java;
-
+package teoriapiedrapapeltijerabucles;
 import java.util.Random;
 import java.util.Scanner;
 
 /**
- *
- * @author jco5780
+ * Demana a l’usuari que et demani si tria “pedra, paper o tisora”: scanner.next.charAt(0) ? char
+Para comparar un char se hace xxx = ‘F’
+S: Pedra(Stone) 	A:Paper	T:Tisora
+Despres genera un numero aleatori entre 3 possibles valors i la tirada de l’ordinador. Mostra.-la per pantalla.
+Mostra per pantalla qui ha guanyat:
+Exemple de resultat:
+Tria la teva jugada (S: Pedra, P: Paper, T: Tisora): P
+ Tu has triat: Paper
+ L'ordinador ha triat: Pedra
+ Resultat: Has guanyat tu!
+ ________________________________________________________________________________
+Tria la teva jugada (S: Pedra, P: Paper, T: Tisora): T
+ Tu has triat: Tisora
+ L'ordinador ha triat: Tisora
+ Resultat: Empat!
+ ________________________________________________________________________________
+Tria la teva jugada (S: Pedra, P: Paper, T: Tisora): S
+ Tu has triat: Pedra
+ L'ordinador ha triat: Paper
+ Resultat: Ha guanyat l'ordinador!
+
  */
-public class Eje_condicionalesRandomJava {
+public class TeoriaPiedraPapelTijeraBucles {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
- Scanner teclado = new Scanner(System.in);
-        Random aleatorio = new Random();
-        int numMaquina; 
-        int numeroUser;
-        boolean cara_cruz;
-        String saca;
-        char opcionjugador="", opcionmaquina="";
-        //ejercicio 1
-        System.out.print("Que numero has pensat 1-10? ");
-        numeroUser = aleatorio.nextInt(1, 11);
-        if (numeroUser > numMaquina) {
-            System.out.println("T'has passat!");
-        } else if (numeroUser < numMaquina) {
-            System.out.println("El numero es mas gran!");
-        } else {
-            System.out.println("Has encertat!");
-        }
-
- System.out.println("El numero de la moneda es: " + numMaquina);
-
-        //ejercicio 2
-        System.out.println("Antes de empenzar el partido hay que decidir quien saca ... ");
-        System.out.println("cara o cruz?");
-        cara_cruz = teclado.nextBoolean();
-        System.out.println("-Perfecto, yo  elijo " + aleatorio.nextBoolean());
-        if (caraz_cruz){
-            saca = "cara";
-        }
-        else{
-            saca = "cruz";
-        }
-        System.out.println("La moneda salio " + saca + ", su sacas y  oltro elige campo");
+        Scanner teclado = new Scanner(System.in);
+        Random random = new Random();
+        int numMaquina;
+        char opcioJugador=' ', opcioMaquina=' ';
+        String opcioJugadorTexte="",opcioMaquinaTexte="", resultat;
         
-        //ejercio 6
-        System.out.println("elija la jugada piedra o papel o tijera");
-        opcionjugador = teclado.next().charAt(0);
+        do 
+        {
+        System.out.print("Tria la teva jugada (S: Pedra, A: Paper, T: Tisora): ");
+        opcioJugador = teclado.next().charAt(0);
+        }
+        while((opcioJugador !='S') && (opcioJugador !='T')
+                && (opcioJugador !='A')&& (opcioJugador !='a')
+               && (opcioJugador !='s') && (opcioJugador !='t') );
         
-        if (opcionjugador == 'S' || opcionjugador=='s')
+        
+        switch (opcioJugador) {
+            case 'S':
+            case 's':
+                opcioJugador = 'S';
+                opcioJugadorTexte = "Pedra";
+                break;
+            case 'A':
+            case 'a':
+                opcioJugador = 'A';
+                opcioJugadorTexte = "Paper";
+                break;
+            case 'T':
+            case 't':
+                opcioJugador = 'T';
+                opcioJugadorTexte = "Tisora";
+                break;
+            default:
+                break;
+        }
+        System.out.println("Has jugat amb " + opcioJugadorTexte);
+        //no controlem lletres incorrectes
+        //El Bot
+        numMaquina = random.nextInt(1, 4);
+        switch (numMaquina) {
+            case 1 -> {
+                opcioMaquina = 'S';
+                opcioMaquinaTexte = "Pedra";
+            }
+            case 2 -> {
+                opcioMaquina = 'A';
+                opcioMaquinaTexte = "Paper";
+            }
+            case 3 -> {
+                opcioMaquina = 'T';
+                opcioMaquinaTexte = "Tisora";
+            }
+
+        }     
+        System.out.println("La maquina ha  jugat : " + opcioMaquinaTexte);
+        
+        if (opcioJugador == opcioMaquina)
         {
-        opcionjugadorTexte = "tijeras";
+            resultat = "Empat";
         }
-        else if (opcionjugador == 'S' || opcionjugador=='s')
+       
+        else if ((opcioJugador == 'S' && opcioMaquina=='T')
+            || (opcioJugador == 'A' && opcioMaquina=='S')
+            || (opcioJugador == 'T' && opcioMaquina=='A'))    
         {
-        opcionjugadorTexte = "tijeras";
+            resultat = "Has guanyat tu!";
         }
-        else if (opcionjugador == 'S' || opcionjugador=='s')
-        {
-        opcionjugadorTexte = "tijeras";
+        else {
+            resultat = "Ha guanyat l'ordinador!";
         }
-        //tambien lo puedes hacer en switch
-        System.out.println("has jugado : " opcionjugadorTexto);
-        nummaquina = random.nextInt(1,4)
-          if (opcionjugador == 'T' || opcionjugador=='t')
-        {
-        opcionmaquinaTexte = "tijeras";
-        }
-        else if (opcionjugador == 'P' || opcionjugador=='p')
-        {
-        opcionmaquinaTexte = "piedra";
-        }
-        else if (opcionjugador == 'P' || opcionjugador=='p')
-        {
-        opcionmaquinaTexte = "papel";
-        }
-        System.out.println("La maquina ha jugado " + opcionmaquinaTexto);
-        String resultado
-        if (opcionjugador == opcionmaquina){
-        resultado = "Empatado"
-        }
-        else if ((opcionjugador == "S" && opcionmaquina=="A") 
-            || (opcionjugador == "T" && opcionmaquina=="S")
-            || (opcionjugador == "T" && opcionmaquina=="T"))
-        {
-            resultado = "jugador";
-        }
-        //maquina
-        else if ((opcionjugador == "S" && opcionmaquina=="A") 
-            || (opcionjugador == "T" && opcionmaquina=="S")
-            || (opcionjugador == "T" && opcionmaquina=="T"))
-        {
-            resultado = "maquina";
-        }
-        }
-    
+        
+        System.out.println("El guanyador es : " + resultat);
     }
     
 }
