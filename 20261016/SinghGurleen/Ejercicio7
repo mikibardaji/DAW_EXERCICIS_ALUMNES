@@ -1,0 +1,47 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package classe.Ejercicio7;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author gurleen
+ */
+public class Ejercicio7 {
+
+      public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+
+        int num;
+        int  positivo = 0;
+        int negativo = 0;
+
+        for (int i = 1; i <= 10; i++) 
+        {
+            System.out.println("Introduce un numero no nulo:");
+            num = teclado.nextInt();
+
+            while (num == 0) {
+                System.out.println("No puede ser 0. Introduce otro numero:");
+                num = teclado.nextInt();
+            }   
+
+        if (num < 0) 
+        {
+             negativo++;
+             System.out.println("Es numero un negativo");
+        } 
+        else 
+        {
+                 positivo++;
+            System.out.println("Es numero positivo");
+        }
+            System.out.println("Es numero negativo" + negativo );
+            System.out.println("Es numero positivo" + positivo);
+        }
+      }
+}
+     
