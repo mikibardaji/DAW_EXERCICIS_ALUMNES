@@ -21,7 +21,7 @@ public class Ex7Contarpositivosynegativos {
         int numero, positivos = 0, negativos = 0;
 
         // Para repetir 10 veces
-        for (int i = 1; i <10; i++) {
+        for (int i = 1; i <=10; i++) {
 
             // Para pedir un numero
             System.out.print("Introduce el numero " + i + ": ");
