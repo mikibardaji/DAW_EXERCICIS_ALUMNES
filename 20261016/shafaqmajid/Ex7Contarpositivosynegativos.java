@@ -28,9 +28,12 @@ public class Ex7Contarpositivosynegativos {
             numero = sc.nextInt();
 
             // Para contar negativos y positivos
-            if (numero > 0) {
+            if (numero > 0) 
+            {
                 positivos++;
-            } else if (numero < 0) {
+            } 
+            else if (numero < 0)
+            {
                 negativos++;
             }
         }
