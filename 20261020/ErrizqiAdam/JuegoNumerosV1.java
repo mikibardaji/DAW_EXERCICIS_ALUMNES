@@ -30,26 +30,19 @@ public class JuegoNumerosV1 {
             System.out.println("Adivina el numero en el que pienso (entre 1 y 100): ");
             numUsuario = sc.nextInt();
 
+contador++;
 
-            
-            if (contador==6) {
-                System.out.println("Muchos intentos. Has perdido!");
-                break;
-            } else if (numMaquina==numUsuario) {
+            if (numMaquina == numUsuario) {
                 System.out.println("Acertaste!");
-            } else if(numUsuario>numMaquina) {
-                System.out.println("El numero es menor a este");
-            } else if(numUsuario<numMaquina) {
-                System.out.println("El numero es mayor a este");
+            } else if (numUsuario > numMaquina) {
+                System.out.println("El numero es menor");
+            } else {
+                System.out.println("El numero es mayor");
             }
-            contador++;
-            
-            
-            
-             
-        } while(numMaquina!=numUsuario);
-        
-        System.out.println("Has durado " + contador + " intentos");
+
+        } while (numMaquina != numUsuario);
+
+        System.out.println("Has acertado en " + contador + " intentos");
         
     }
     
