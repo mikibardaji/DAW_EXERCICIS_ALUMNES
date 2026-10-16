@@ -2,4 +2,4 @@
 
 Fes tantes versions com et surtin del enunciat
 
-[
+![Texto alternativo](Acertar.PNG)
