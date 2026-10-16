@@ -29,7 +29,7 @@ public class Ex10Iteratius {
                  {
                         if(nota == 10)
                          {
-                           notaMaxima = true;
+                           notaMaxima = true; //variable tipo flag
                          }
                  }
                  else
