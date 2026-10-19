@@ -1,0 +1,51 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercicibuclesrandom.v1.pkg2;
+
+import java.util.Random;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Caire
+ */
+public class ExerciciBUCLESRANDOMV12 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner (System.in);
+        Random random = new Random();
+        
+        // LO MISMO QUE EN EL ANTERIOR PERO UNICAMENTE AÑADIIMOS EL AND, CUANDO SEA 5 O MAS INTENTOS SE PARA TODO  
+        
+        int numero = 0;
+        int intentos = 0;
+        int aleatorio = random.nextInt(1,11);
+        
+        while (numero != aleatorio && intentos < 5){
+        
+            System.out.println("Que  numero crees que estoy pensado? ");
+            numero = teclado.nextInt();
+            intentos++;
+            
+        if (numero > aleatorio){
+            System.out.println("es numero es mas pequeño");
+        }
+        else if (numero < aleatorio){
+            System.out.println("el numero es mas grande");
+        }
+        else 
+        {
+            System.out.println("acertaste en " + intentos);
+        
+        }
+        
+        
+        }
+    }
+    
+}
