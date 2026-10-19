@@ -1,0 +1,55 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercicibuclesrandom.v1.pkg3;
+
+import java.util.Random;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Caire
+ */
+public class ExerciciBUCLESRANDOMV13 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+         Scanner teclado = new Scanner (System.in);
+        Random random = new Random();
+        
+        // no me sale!!!
+        
+        int numero = 0;
+        int intentos = 0;
+        int aleatorio = random.nextInt(1,101);
+        
+        while (numero != aleatorio && intentos < 5){
+        
+            System.out.println("Que  numero crees que estoy pensado? ");
+            numero = teclado.nextInt();
+            intentos++;
+            
+    if (numero > aleatorio) {
+            System.out.println("Es más pequeño");
+     else if (numero - aleatorio < 10) {
+        System.out.println("¡Estás cerca!");
+    }
+    
+    else if (numero < aleatorio) {
+    System.out.println("Es más grande");
+    else if (aleatorio - numero < 10) {
+        
+    }
+} 
+    else {
+    System.out.println("¡Acertaste en " + intentos + " intentos!");
+}
+ 
+    
+
+  }
+}
+}
