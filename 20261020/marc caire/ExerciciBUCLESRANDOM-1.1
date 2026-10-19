@@ -1,0 +1,58 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercicibuclesrandom.v1.pkg1;
+
+import java.util.Random;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Caire
+ */
+public class ExerciciBUCLESRANDOMV11 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner (System.in);
+        Random random = new Random();
+        
+        int aleatorio = random.nextInt(1,5);
+        int numero = 0;
+        int intentos = 0;
+        
+        
+        // QUEREMOS QUE SE EJECUTE LAS VECES QUE HAGA FALTA HASTA QUE ACIERTE
+        
+        // Por lo tanto hacemos un while
+        // cuando el numero no sea iigual
+        while (numero != aleatorio){
+            
+         // mostramos que numero estamos pensando 
+            System.out.println("Que num crees que estoy pensando? ");
+         // esperamos respuesta del numero
+            numero = teclado.nextInt();
+            
+         // y vamos contando los intentos que se vayan ejecutando
+            intentos++;
+            
+          // si el numero es mas mayor aparecera lo siguiente
+            if (numero > aleatorio){
+                System.out.println("es mas pequeño");
+               }
+          // si el numero es menor pasara lo siguiente
+            else if (numero < aleatorio){
+                System.out.println("es mas grande");
+            }
+          // si no se hace nada de lo anterior pasara esto
+            else {
+                System.out.println("Acertaste en " + intentos + "intentos");
+            }
+        
+        }
+    }
+    
+}
