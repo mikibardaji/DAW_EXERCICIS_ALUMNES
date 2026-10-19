@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package excercicibuclev1.pkg3;
+package excercicibuclev1.pkg2;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -11,12 +11,13 @@ import java.util.Scanner;
  *
  * @author kande
  */
-public class ExcerciciBuclev13 {
+public class ExcerciciBuclev12 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        // TODO code application logic here
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
 
@@ -36,10 +37,6 @@ public class ExcerciciBuclev13 {
                 System.out.println("El numero es menor");
             }
 
-            if (Math.abs(numero - numeroPensado) < 10) {
-                System.out.println("¡Estas cerca!");
-            }
-
             System.out.println("Intentalo otra vez:");
             numero = sc.nextInt();
             intentos++;
@@ -52,5 +49,3 @@ public class ExcerciciBuclev13 {
             System.out.println("Has perdido. El numero era " + numeroPensado);
         }
     }
-    
-}
