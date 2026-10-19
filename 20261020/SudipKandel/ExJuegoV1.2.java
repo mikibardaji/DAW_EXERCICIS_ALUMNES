@@ -17,7 +17,6 @@ public class ExcerciciBuclev12 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
 
