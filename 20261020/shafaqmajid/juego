@@ -1,0 +1,84 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package juego;
+
+import java.util.Random;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Usuario
+ */
+public class Juego {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+         Scanner sc = new Scanner(System.in);
+         Random random = new Random();
+
+        // MOSTRAR
+        System.out.println("He pensado un numero entre 1 y 100.");
+        System.out.println("Intenta adivinarlo");
+
+        // CALCULAR
+        int numeroPensado = random.nextInt(100) + 1;
+        int numeroUsuario = 0;
+        int intentos = 0;
+
+        // ESPERAR
+        while (numeroUsuario != numeroPensado && intentos < 5) {
+
+            System.out.print("Introduce un numero: ");
+            numeroUsuario = sc.nextInt();
+
+            // CONTAR INTENTO
+            intentos++;
+
+            // COMPROBAR
+            if (numeroUsuario < numeroPensado) 
+            {
+
+                System.out.println("El numero es mayor.");
+
+                // V1.3
+                if (numeroPensado - numeroUsuario < 10)
+                {
+                    System.out.println("Estas cerca");
+                }
+
+            } 
+             else if (numeroUsuario > numeroPensado) 
+             {
+
+                System.out.println("El numero es menor.");
+
+                // V1.3
+                if (numeroUsuario - numeroPensado < 10) {
+                    System.out.println("Estas cerca");
+                }
+
+            } 
+             else 
+             {
+
+                System.out.println("Acertaste");
+             }
+        }
+
+        // V1.1 y V1.2
+        if (numeroUsuario == numeroPensado) 
+        {
+            System.out.println("Has acertado en " + intentos + " intentos.");
+        } 
+        else 
+        {
+            System.out.println("Has llegado al maximo de 5 intentos.");
+            System.out.println("El numero era: " + numeroPensado);
+        }
+    }
+    
+}
