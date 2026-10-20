@@ -29,7 +29,6 @@ public class ExAdivinarNumero {
         
         while (numElegido != numRandom && contador < 5)
         {
-            numRandom = ran.nextInt(1, 101);
             System.out.println("primera " + (numElegido - numRandom) + " segunda " + (numRandom - numElegido));
             if (numElegido > numRandom)
             {
@@ -61,6 +60,7 @@ public class ExAdivinarNumero {
             contador++;
             System.out.println("Que numero crees que sacare?");
             numElegido = sc.nextInt();
+            numRandom = ran.nextInt(1, 101);
         }
         if (numElegido == numRandom)
         {
