@@ -1,0 +1,5 @@
+# Realitza el següent exercici
+Escribe un programa que pida la edad y a partir del año que nos encontramos, nos muestre la edad que tenia el usuario en cada año hasta su nacimiento. Para saber el año que nos encontramos escribe estas dos lineas
+
+LocalDateTime hoy = LocalDateTime.now();
+int anyo_actual = hoy.getYear();
