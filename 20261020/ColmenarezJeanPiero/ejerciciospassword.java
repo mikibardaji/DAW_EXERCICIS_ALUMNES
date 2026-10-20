@@ -2,59 +2,52 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package practicaejerciciosbucle;
+package ejerciciopassword;
 
-import java.util.Random;
 import java.util.Scanner;
 
 /**
  *
  * @author jco5780
  */
-public class PracticaEjerciciosBucle {
+public class EjercicioPassword {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
-        Random aleatorio = new Random();
-        int minimoMaquina=1, maxMaquina=101;
-        int user, maquina;
-        char opcion;
-        System.out.println("El user dira el usuario");
+    Scanner teclado = new Scanner(System.in);
+    String user, password;
+    int intentos=0, contador;
+    //final String password = "admin123";
+    
+        System.out.println("Nombre de Usuario");
+        user = teclado.nextLine();
+        do {
+            
+ 
+        System.out.println("Introduce la contraseña");
+        password = teclado.nextLine();
+        //actualizar contador
+        intentos++;
+        if (password.equals("Admin123")){
+                System.out.println("Bienvenido " + user);
+        }
+        else  {
+            System.out.println("Incorrecto");
+            System.out.println("Recuerda que al tercer intento se bloquea");
+        }
+     
+        } while (!password.equals(password_ok)&& intentos < 3);
         
-        do{
-             user = teclado.nextInt();
-
-            System.out.println("Di un numero maquina para que adivines");
-            maquina = aleatorio.nextInt(minimoMaquina,maxMaquina);
+        if(!password.equals(password_ok))
+        {
+            System.out.println("Cuenta Bloqueada");
+        }
+        else{
+            
+        }
         
-         if(maquina == user)
-         {
-             System.out.println("Acertaste Terminator era el " + aleatorio);
-         }
-         else if (maquina > user){
-             System.out.println("Es mas grande");
-         }   
-         else {
-            System.out.println("Es mas pequeño");
-        
-        }
-             
-        } while (true);
-        opcion = teclado.nextInt()charAt();
-        if (opcion =='a') {
-            System.out.println("Acertado");
-        }
-        else if (opcion == 'g') {
-            minimoMaquina = maquina+1;
-            System.out.println("Pienso que es el .. " + maquina);
-        }
-        else if (opcion == p ) {
-            System.out.println("");
-        }
-
     }
     
 }
