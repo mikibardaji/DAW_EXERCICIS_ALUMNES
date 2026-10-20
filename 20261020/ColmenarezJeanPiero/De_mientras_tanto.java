@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package ejerciciosjuegosboolean;
+package practicaejerciciosbucle;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -11,37 +11,50 @@ import java.util.Scanner;
  *
  * @author jco5780
  */
-public class EjerciciosJuegosBoolean {
+public class PracticaEjerciciosBucle {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Random aleatorio = new Random();
         Scanner teclado = new Scanner(System.in);
-        int maquina, user, total;
+        Random aleatorio = new Random();
+        int minimoMaquina=1, maxMaquina=101;
+        int user, maquina;
+        char opcion;
+        System.out.println("El user dira el usuario");
         
-        System.out.println("La maquina elegira un numero");
-        maquina = aleatorio.nextInt();
-        System.out.println("Di un numero");
-        user = teclado.nextInt();
+        do{
+             user = teclado.nextInt();
+
+            System.out.println("Di un numero maquina para que adivines");
+            maquina = aleatorio.nextInt(minimoMaquina,maxMaquina);
         
-        if (total) {
-            total= maquina<user;
-            System.out.println("Es menor");
+         if(maquina == user)
+         {
+             System.out.println("Acertaste Terminator era el " + aleatorio);
+         }
+         else if (maquina > user){
+             System.out.println("Es mas grande");
+         }   
+         else {
+            System.out.println("Es mas pequeño");
+        
         }
-        else if {
-            totatl= maquina>user;
-            System.out.println("Es mayor");
+             
+        } while (true);
+        opcion = teclado.nextInt()charAt();
+        if (opcion =='a') {
+            System.out.println("Acertado");
         }
-        else{
-            System.out.println("Acertaste");
+        else if (opcion == 'g') {
+            minimoMaquina = maquina+1;
+            System.out.println("Pienso que es el .. " + maquina);
+        }
+        else if (opcion == p ) {
+            System.out.println("");
         }
 
-        
-              
-                    
-                
     }
     
 }
