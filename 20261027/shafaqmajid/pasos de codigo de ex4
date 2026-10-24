@@ -1,0 +1,16 @@
+1. Escribe un programa que pida la edad y a partir del año que nos encontramos, nos muestre la edad que tenia el usuario en cada año hasta su nacimiento.
+
+Para saber el año que nos encontramos escribe estas dos lineas
+```java
+LocalDateTime hoy = LocalDateTime.now();  
+int anyo_actual = hoy.getYear();     
+
+
+
+MOSTRAR: Mostrar el mensaje para pedir la edad al usuario.
+ESPERAR: Leer y guardar la edad introducida por el usuario.
+CALCULAR: Obtener el año actual usando LocalDateTime.
+CALCULAR: Calcular el año de nacimiento restando la edad al año actual.
+CALCULAR: Calcular la edad correspondiente a cada año.
+MOSTRAR: Mostrar el año y la edad del usuario en cada año.
+CALCULAR: Restar un año en cada repetición del bucle.
