@@ -1,0 +1,47 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exerciciedad.año;
+
+import java.time.LocalDateTime;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Caire
+ */
+public class ExerciciEDADAÑO {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner (System.in);
+        
+        
+        // mostramos la edad
+        System.out.println("Introdue tu edad: ");
+        int edad = teclado.nextInt();
+        
+        
+        LocalDateTime hoy = LocalDateTime.now();
+        int anyo_actual = hoy.getYear();
+        
+        // si la edad es mayo o igual a 0 pasara lo siguiente
+        while(edad >=0){
+          
+            System.out.println("En" + anyo_actual + "Tenias" + edad + "Años" );
+            
+            // esto se ira restando cada vez 1
+            anyo_actual--;
+            edad--;
+        }
+        
+    
+    
+    
+        
+    }
+    
+}
