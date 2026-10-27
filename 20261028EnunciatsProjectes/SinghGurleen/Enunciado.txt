@@ -1,3 +1,4 @@
 El programa te pide que escribas el curso que estás cursando. Si lo introduces correctamente, te muestra toda la información relacionada con él. 
 Si no escribes nada o pones un curso que no existe, te lo vuelve a preguntar hasta que pongas uno válido. 
-
+Para probar pondremos dos cursos de prueba DAW i DAM
+Al marcar uno que te muestre las asignaturas (3) de cada curso.
