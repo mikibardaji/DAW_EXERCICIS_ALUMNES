@@ -1,0 +1,10 @@
+EXERCICI BUCLE PROVENSHARE:
+
+Crear un bucle donde se recorra una lista con todo el material y se muestre únicamente el producto que ha buscado el usuario
+
+
+1. INICIAR
+2. pedir al usuario que producto busca
+3. Esperar
+4. buscar en la lista el producto pedido
+5. FIN
