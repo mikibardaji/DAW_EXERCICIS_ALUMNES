@@ -1,0 +1,4 @@
+Crear un programa que solicite al usuario una contraseña para acceder a una cuenta. La contraseña correcta será "bucles27". 
+Mientras el usuario introduzca una contraseña incorrecta, el programa deberá volver a solicitarla. 
+Si falla más de 3 veces, se bloquearán los intentos.
+Cuando introduzca la contraseña correcta, mostrará un mensaje de bienvenida y finalizará el programa. 
