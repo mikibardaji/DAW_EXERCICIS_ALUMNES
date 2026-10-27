@@ -1,0 +1,15 @@
+ENUNCIADO
+
+Crear un programa que le pida al usuario que verifique su identidad solicitando su usuario, correo y contraseña. Si la verificación es correcta debe mostrar “Verificación completada” en caso contrario mostrar “Verificación no valida”.
+
+//Definir credenciales correctas.
+
+//Iniciar un bucle mientras (verdadero) o repetir hasta.
+
+//Pedir usuario_ingresado, correo_ingresado y contraseña_ingresada.
+
+//Evaluar con una condición SI (usuario == usuario_ingresado Y correo == correo_ingresado Y contraseña == contraseña_ingresada).
+
+	• Si es verdadero: Mostrar "Verificación completada" y salir del bucle.
+
+	• Si es falso: Mostrar "Verificación no válida" (el bucle continúa).
