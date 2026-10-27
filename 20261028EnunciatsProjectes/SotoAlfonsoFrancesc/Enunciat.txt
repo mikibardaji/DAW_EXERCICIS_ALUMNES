@@ -1,0 +1,55 @@
+Primer que et demani inicia sesio, si no s'inicia sesio et tornir a demanar el usuari i contraseña.
+Despres enseñar un menu amb 6 opcions:
+1. Oferir serveis/productes:
+	Si es selecciona aquesta et preguntara que vols oferir y per quants credits
+2. Comprar serveis/productes
+	Si es selecciona aquesta opcio et preguntara quin servei o producte vls comprar i si tens els suficients credits per pagarlo
+3. Historial
+	Si es selecciona aquesta opcio t'ensenyara un historial de las teves compres/ventas
+4. Perfil
+	Si es selecciona aquesta opcio t'enseñara el usuari que ha iniciat sesio
+5. Moneder
+	Si es selecciona questa opcio T'ensenyara quants credits tens al moneder i si vols afegir mes
+6. Sortir
+	Aquesta opcio es per sortir del menu y acabar del programa
+
+
+Menu
+Inici
+Mostrar "Inicia sesio"
+Demanar usuari i contraseña
+Mostrar "Que vols fer: "
+Mostrar "1. Oferir serveis/productes
+	 2. Comprar serveis/productes
+	 3. Historial
+	 4. Perfil
+	 5. Moneder
+	 6. Sortir"
+Si Opcio 1
+	Mostrar "Quin serveis/producte vols oferir?"
+	Demanar serveis/producte
+	Mostrar "A quin preu?" 
+	Demanar preu
+Si opcio 2
+	Mostrar "Quin servei/producte vols comprar"
+	Demanar servei/producte
+	Mostrar "Quant val"
+	Demanar Preu
+	Calcular Moneder - preu
+	Si Moneder - Preu < 0 
+		Mostrar "no tens sufiients credits"
+	Si no 
+		Mostrar "Ara et queda en el moneder : " Moneder
+Si opcio 3
+	Mosrtrar "Aquest es el teu historial de compra/venta"
+	Mostrar Historial
+Si opcio 4
+	Mostrar "El teu correu es" usuari 
+Si opcio 5
+	Mostrar "Tens aquest credits al moneder" Moneder
+	Mostrar "Vols afegiri mes? "
+	Demanar quantita_afegida
+	Calcular Moneder + quantitat_afegida
+Si opcio 6
+	Mostrar "FINS A LA PROXIMA!!!"
+Fi
