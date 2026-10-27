@@ -2,7 +2,15 @@
   mostrar "Bienvenido " user
   mostrar "Quieres vender o comprar algunos productos"
   esperar vender_comprar
-  Si decide venderas añadiras unos productos
-  si decider comprar compraras productos
-Te mostrara los datos del producto hasta que decidas ofertar
+  Si deciede comprar:
+  mostrar "Te recomendamos un producto o tienes algo en mente? (recomendacion o solo)"
+    esperar maquina_solo
+                si decider maquina: 
+                     Té aparecera productos de la maquina
+                si decide solo:
+                añadiras productos a la cuenta
+
+  Si decides vender:
+      Si decide vender añadiras unos productos
+      Te mostrara los datos del producto hasta que decidas ofertar
 
