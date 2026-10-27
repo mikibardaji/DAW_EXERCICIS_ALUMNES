@@ -1,0 +1,1 @@
+Crear un programa que le pida al usuario que verifique su identidad solicitando su correo y contraseña. Si la verificación es correcta debe mostrar “Verificación completada” en caso contrario mostrar “Verificación no valida”.
