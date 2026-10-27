@@ -1,0 +1,8 @@
+Fer un menu que nomes mostri els serveis/objectes disponibles, tindrem una llista de serveis y escollint el servei podrem dir-ne si esta disponible o no, si esta disponible no cambie res, et surt el preu per hora, si no esta disponible que surti en vermell o no es de fe´-ho mes senzill posar-hi al costat "No disponible en aquest moment"
+
+Pseudocodig
+1.Mostrar la llista de serveis
+2.Demanar-hi que escogeixi el servei
+3.Demanar-hi si esta disponible
+4a.Si esta disponible que hi tornem a la llista de serveis
+4b.Si NO esta disponible tornar a la llista de serveis pero amb un comentari de que no esta disponible.
