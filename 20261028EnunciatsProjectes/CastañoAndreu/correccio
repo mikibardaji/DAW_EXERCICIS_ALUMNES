@@ -1,0 +1,10 @@
+Al inici el programa et demanara el saldo que tens...
+Despres sortira un menú que serà
+1.- Ingressar més diners
+2.- Fer la compra.
+3.- Sortir
+No pots sortir fins apretar el 3.
+  Si apretes la opció 1, augmentes els diners a la quantitat inicial.
+  Si apretes a la opció 2, et demana nom producte i preu, i t'ha de dir si es compra o no... Si es compra s'ha de restar el saldo
+Si no es pot comprar t'ha d'avisar.
+  
