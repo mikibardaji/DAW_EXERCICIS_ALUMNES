@@ -14,3 +14,13 @@
       Si decide vender añadiras unos productos
       Te mostrara los datos del producto hasta que decidas ofertar
 
+
+ENUNCIADO BUENO A PARTIR DE AQUÍ
+Enunciado modificado:
+Un bucle que te pida el producto que quieres comprar y su precio.
+Despues de introducirlo, te debe pedir si quieres contratar más servicios (SI/NO)
+Si dices si, añades mas.
+Al salir que no, debe decir cuanto dinero te has gastado en total (ir acumulando el gasto) y cuantos productos has comprado.
+
+
+
