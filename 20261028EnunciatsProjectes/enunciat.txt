@@ -1,0 +1,2 @@
+ENUNCIAT:
+Fer un programa que demani a l’usuari si vol pujar un producte o no, i el programa no parara fins que l’usuari no respongui “si” o “no”, i si respon amb un “si” el programa demanarà les dades del producte (Nom del producte, preu i estat del producte), i despres de tot demanar si vol afegir un altre producte o no
