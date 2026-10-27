@@ -1,0 +1,10 @@
+Inicio
+Repetir Muestra "¿Qué curso estás cursando?"
+Muestra curso
+Si el curso existe
+Muestra “El curso existe”
+Si o No 
+Muestra "Curso no válido. Inténtalo de nuevo."
+Fin Si
+Muestra "Bienvenido al curso"
+Fin
