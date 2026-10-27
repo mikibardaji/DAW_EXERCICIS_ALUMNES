@@ -4,3 +4,10 @@ Buscador y acabar en cuando lo encuentre
   calcular 
 
 Añadir varios productos al carrito y luego comprarlo
+
+
+Enunciado modificado:
+Un bucle que te pida el producto que quieres comprar y su precio.
+Despues de introducirlo, te debe pedir si quieres contratar más servicios (SI/NO)
+Si dices si, añades mas.
+Al salir que no, debe decir cuanto dinero te has gastado en total (ir acumulando el gasto)
