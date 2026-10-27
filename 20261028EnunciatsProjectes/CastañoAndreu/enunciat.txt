@@ -1,0 +1,5 @@
+Enunciat:
+Quan un usuari realitzi un compra demanar-li les seves dades fins que les hagi omplert per confirmar la compra o fins que l’usuari cancel·li la compra.
+
+Solució:
+Fer diversos souts (un per cada dada que es demana: numero de la tarjeta, CVC, data de caducitat, nom del compte, dades de contacte…). Fer un do while que mostri un missatge de error si no s’han introduït correctament les dades o un missatge de que s’han introduït correctament les dades fins que s’hagin introduït correctament les dades o fins que es cancel·li la compra (mostrar missatge de compra cancel·lada.
