@@ -1,0 +1,3 @@
+Volem crear un simulador del catàleg de ProvenShare. El programa demanarà primer a l'usuari quants productes vol revisar. Mitjançant un bucle, el programa demanarà consecutivament el títol, el preu i l'estat (1 si està disponible, 0 si no ho està) de cada producte.
+• Si el producte està disponible (1), es mostrarà per pantalla el seu títol i el preu.
+• Si el producte no està disponible (0), es mostrarà el títol seguit del missatge: "No disponible en aquest moment".
