@@ -1,0 +1,10 @@
+
+Crear una plataforma en la que los usuarios puedan prestar materiales a otras personas y ganar puntos por sus acciones. Cuanto más participen y más responsables sean, más puntos acumularán y mayor será su rango dentro de la comunidad. 
+
+Registrar la cantidad de productos vendidos por cada usuario.
+Identificar el tipo de producto vendido.
+Asignar los puntos correspondientes según el producto.
+Sumar los puntos obtenidos al total acumulado del usuario.
+Comprobar si el usuario alcanza los puntos necesarios para el siguiente rango.
+Si cumple los requisitos, subirlo de rango.
+Finalizar el proceso.
