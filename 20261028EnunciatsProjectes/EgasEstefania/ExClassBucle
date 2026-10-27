@@ -1,0 +1,8 @@
+//Vamos a diseñar un programa que te permita registrar tu nombre, correo, crear una contraseña, telefono
+//Almacenar usuarios y contraseña
+//En caso de no ingresar correctamente la contraseña o el usuario no te permite ingresar indica"Usuario no encontrado o contraseña incorrecta"
+//Ingresar los servicios/productos que ofreces
+//Concatenar los servicios/productos al usuario
+//Mostrar los productos/servicios  del usuario
+//Concatenar los productos y servicios añadidos
+//Mostrar una "cartera" donde se acumulan los servicios/productos.
