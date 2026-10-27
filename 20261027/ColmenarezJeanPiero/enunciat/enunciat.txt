@@ -1,1 +1,7 @@
+Buscador y acabar en cuando lo encuentre
+ opciones 
+  mostrar "Buscar producto"
+  calcular 
+
+Añadir varios productos al carrito y luego comprarlo
 
