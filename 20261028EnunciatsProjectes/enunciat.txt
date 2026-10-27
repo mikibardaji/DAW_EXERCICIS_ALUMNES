@@ -1,2 +1,15 @@
 ENUNCIAT:
 Fer un programa que demani a l’usuari si vol pujar un producte o no, i el programa no parara fins que l’usuari no respongui “si” o “no”, i si respon amb un “si” el programa demanarà les dades del producte (Nom del producte, preu i estat del producte), i despres de tot demanar si vol afegir un altre producte o no.
+
+mostrar “Vols pujar un producte? (si o no)”
+esperar peticioUsuari
+	si peticioUsuari es “no”, para
+  si peticioUsuari es “si”, demanar a l’usuari:
+    mostrar “Quin es el nom del producte?”
+    esperar nomProducte
+    mostrar “Quan val el teu producte?”
+    esperar preuProducte
+    mostrar “Vols afegir un altre producte?”
+	  Si l’usuari diu que si, doncs es torna a executar el mateix proces,
+	  Si l’usuari diu que no, doncs es tanca el programa.
+  mostrar “El teu producte “ + nomProducte +“ s’ha afegit correctament, i te un preu de ” + preuProducte + “€”
