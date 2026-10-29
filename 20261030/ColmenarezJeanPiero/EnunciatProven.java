@@ -20,7 +20,7 @@ public class EnunciatProven {
         String user,correo, password, nom_producto, desc_producto, producto_interesado;
         double precio;
         int id;
-        boolean correctoPassword=false, vender_comprar=false;
+        boolean correctoPassword=false, vender_comprar=false, interes_S_N;
         
         System.out.println("Crea tu usuario");
         System.out.println("Nombre:");
@@ -31,8 +31,13 @@ public class EnunciatProven {
         
         System.out.println("Sabes un producto que te interese?");
         producto_interesado = teclado.nextLine();
-        
-        
+
+        do {
+            System.out.print("Nombre del Producto: ");
+            nom_producto = teclado.nextLine();
+
+        } While (interes_S_N.equalsIgnoreCase()
+            
         
         
 
