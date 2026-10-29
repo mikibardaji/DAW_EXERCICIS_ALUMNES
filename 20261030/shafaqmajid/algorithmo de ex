@@ -1,0 +1,15 @@
+Inicio
+1. Crear un Scanner para leer los datos del usuario.
+2. Inicializar total = 0, cantidad = 0 y respuesta = "S".
+3. Mientras la respuesta sea "S":
+   - MOSTRAR: Pedir el nombre del producto.
+   - ESPERAR: Leer el nombre del producto.
+   - MOSTRAR: Pedir el precio del producto.
+   - ESPERAR: Leer el precio.
+   - CALCULAR: Sumar el precio al total.
+   - CALCULAR: Aumentar la cantidad de productos en 1.
+   - MOSTRAR: Preguntar si quiere comprar más productos.
+   - ESPERAR: Leer la respuesta del usuario.
+4. MOSTRAR: Enseñar el total gastado.
+5. MOSTRAR: Enseñar la cantidad de productos.
+Fin.
