@@ -1,0 +1,75 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercici.apliaciosollicitada;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Caire
+ */
+public class ExerciciAPLIACIOSOLLICITADA {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner (System.in);
+        
+        double saldo = 500;
+        double precio;
+        double totalgastado;
+        int totalproducto;
+        String menuprincipal = "no";
+        String salir;
+        String producto;
+        
+        while (menuprincipal.equalsIgnoreCase("no")){
+            System.out.println("1. Ingresa dinero");
+            System.out.println("2. compar pruducto");
+            System.out.println("3. salir");
+            System.out.println("Elige la opcion que quieras: ");
+            int opcion = teclado.nextInt();
+            
+            
+        
+        if (opcion ==1){
+        
+            System.out.println("Cuanto dinero quieres ingresar? ");
+            double dinero = teclado.nextInt();
+            saldo = saldo + dinero;
+        }
+        else if (opcion ==2){
+            System.out.println("Producto: ");
+           producto = teclado.next();
+            System.out.println("Precio: ");
+            precio = teclado.nextDouble();
+            
+          if (saldo >= precio){
+          saldo = saldo - precio;
+          totalgastado = totalgastado=precio;
+          totalproducto = totalproducto +1;
+          
+         } else{
+                System.out.println("Saldo insuficiente");  
+                  
+            }
+          
+            
+        
+        
+          
+          
+          
+        }
+        else if (opcion ==3){
+            System.out.println("Quieres salir? (SI/NO)");
+            salir = teclado.next();
+        
+        }
+            
+        
+        
+        }
