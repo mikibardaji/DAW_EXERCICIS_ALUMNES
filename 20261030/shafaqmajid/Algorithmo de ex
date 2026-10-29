@@ -1,0 +1,49 @@
+Inicio
+
+1. CALCULAR: Crear las variables iniciales:
+- saldo = 500
+- gastado = 0
+- cantidad = 0
+- opcion = 0
+2. ESPERAR: Repetir el menú mientras la opción sea diferente de 3.
+
+3. MOSTRAR: Enseñar el menú:
+- 1. Ingressar diners
+- 2. Comprar producte
+- 3. Sortir
+4. ESPERAR: Leer la opción elegida por el usuario.
+
+5. CALCULAR: Comprobar la opción con switch.
+
+Si elige la opción 1:
+- MOSTRAR: Preguntar cuánto dinero quiere ingresar.
+- ESPERAR: Leer la cantidad de dinero.
+- CALCULAR: Sumar el dinero al saldo.
+- MOSTRAR: Enseñar el saldo actual.
+Si elige la opción 2:
+- MOSTRAR: Pedir el nombre del producto.
+- ESPERAR: Leer el nombre del producto.
+- MOSTRAR: Pedir el precio.
+- ESPERAR: Leer el precio.
+- CALCULAR: Comprobar si el saldo es suficiente.
+- Si el saldo es suficiente:
+  - CALCULAR: Restar el precio del saldo.
+  - CALCULAR: Sumar el precio al dinero gastado.
+  - CALCULAR: Aumentar la cantidad de artículos en 1.
+  - MOSTRAR: Indicar que la compra ha sido aceptada y enseñar el saldo actual.
+- Si el saldo no es suficiente:
+  - MOSTRAR: Indicar que no hay saldo suficiente.
+Si elige la opción 3:
+- MOSTRAR: Preguntar si quiere salir.
+- ESPERAR: Leer la respuesta.
+- Si responde SÍ:
+  - MOSTRAR: Enseñar el dinero gastado, los artículos comprados y el saldo final.
+- Si responde NO:
+  - CALCULAR: Volver al menú.
+Si elige otra opción:
+
+- MOSTRAR: Indicar que la opción es incorrecta.
+
+6. Repetir el menú mientras corresponda.
+
+Fin.
