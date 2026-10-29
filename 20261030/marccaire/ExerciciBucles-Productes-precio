@@ -1,0 +1,57 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercicibucles.producte;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Caire
+ */
+public class ExerciciBUCLESProducte {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       Scanner teclado = new Scanner (System.in);
+       
+       String respuesta = "si";
+       String productos;
+       double precio;
+       double total =0;
+       int cantidad = 0;
+       
+       // QUEREMOS QUE SI LA RESPUESTA ES SI SE SIGA REPITIENDO HASTA QUE SEA NO
+       while (respuesta.equalsIgnoreCase("si")){
+           
+           // PREGUNTAMOS PRODUCTO
+           System.out.println("Producto: ");
+           //ESPERAMOS PRODUCTO
+           productos = teclado.nextLine();
+           
+           //MOSTRAMOS PRECIO PRECIO
+           System.out.println("Pecio: ");
+           //ESPERAMOS PRECIO
+           precio = teclado.nextDouble();
+           
+           // vamos calculando y sumando lo que vamos añadiendo
+           total = total + precio;
+           cantidad = cantidad +1;
+           
+           // preguntamos si quieres mas servicios (si es si seguira preguntando)
+           System.out.println("Mas Servicios? (SI/NO): ");
+           respuesta = teclado.next();
+     
+       }
+       // si es no mostraremos lo siguiente
+       // el total gastado 
+        System.out.println("Total gastado:" + total);
+        
+        // la cantidad
+        System.out.println("Productos comprados: " + cantidad);
+    }
+    
+}
