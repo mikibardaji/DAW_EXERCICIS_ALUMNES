@@ -12,10 +12,29 @@ Escriu un programa en Java per a una caixa registradora que sumi els preus dels 
 * **Captura d'excepcions i sortida forçada:** Si l'usuari fica un text no vàlid (per exemple, `"gratis"` o `"hola"`), el programa ha de capturar l'excepció `NumberFormatException`. En aquest moment, s'ha de mostrar un missatge crític (`"Error de format. Operació cancel·lada per seguretat."`) i el bucle s'ha d'interrompre.
 * **Resultat final:** Tant si el bucle acaba normalment (amb un `0`) com si es trenca per l'excepció, el programa ha de mostrar el total acumulat fins a aquell moment.
 
-# Exercici amb IA
 
-Amb tot el que has apres fins ara, intenta fer un programa interessant per tu, no cal que sigui super complex, però que faci o calculi algunes coses interessants.
-Que creguessiu que (amb capes de app mobil o web) podria funcionar. 
-Pero sol pot sortir coses fetes a classe (Random, Scanner, if's ,swtich, bucles, Exceptions). 
-Tampoc podeu fer meravelles, perque encara us falta molta teoria, pero algo que sigui interessant, bonic. 
-S'ha de pujar , el document amb TOTA la interacció de la ia, com l'aneu modificant, i el fitxer final de JAVA.
+
+# Exercici Pràctic: Crea un Programa amb Intel·ligència Artificial (IA)
+
+## 📌 Objectiu de l'exercici
+L'objectiu és utilitzar tot el que has après fins ara a classe per dissenyar i programar una aplicació que trobis **interessant**. No cal que sigui excessivament complexa, però sí que ha de fer càlculs o accions útils que, en un futur (afegint-hi una interfície web o mòbil), puguin funcionar com una aplicació real.
+
+---
+
+## 🛠️ Requisits Tècnics (Què es pot fer servir?)
+Com que encara falta teoria per veure, està totalment **prohibit** utilitzar conceptes avançats que no s'hagin explicat a classe. El teu programa s'ha de basar exclusivament en:
+* `Scanner` (per a l'entrada de dades)
+* `Random` (per a generar valors aleatoris)
+* Estructures condicionals (`if` / `switch`)
+* Bucles (`for` / `while` / `do-while`)
+* Gestió d'excepcions (`try-catch`)
+
+*Nota: No cal que surti tot lo que hi ha aquí*
+
+---
+
+## 📂 
+Has de pujar un **únic lliurament** que inclogui els dos elements següents:
+
+1. **Document de la interacció amb la IA:** Un fitxer (PDF o Word) on es mostri **TOTA** la conversa fins al resultat final.
+2. **El fitxer de codi font:** El fitxer original amb l'extensió `.java` del programa definitiu.
