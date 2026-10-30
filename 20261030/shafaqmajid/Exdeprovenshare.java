@@ -28,7 +28,7 @@ public class Exdeprovenshare {
         while (opcion != 3) {
 
             // MOSTRAR: menu principal
-            System.out.println("\n--- MENU ---");
+            System.out.println("--- MENU ---");
             System.out.println("1. Ingressar diners");
             System.out.println("2. Comprar producte");
             System.out.println("3. Sortir");
