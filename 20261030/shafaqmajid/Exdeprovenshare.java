@@ -25,7 +25,8 @@ public class Exdeprovenshare {
         int opcion = 0;
 
         // ESPERAR: repetir el menu
-        while (opcion != 3) {
+        while (opcion != 3)
+            {
 
             // MOSTRAR: menu principal
             System.out.println("--- MENU ---");
@@ -39,7 +40,8 @@ public class Exdeprovenshare {
             sc.nextLine();
 
             // CALCULAR: elegir la opcion
-            switch (opcion) {
+            switch (opcion)
+                {
 
                 case 1:
 
@@ -66,7 +68,8 @@ public class Exdeprovenshare {
                     sc.nextLine();
 
                     // CALCULAR: comprobar el saldo
-                    if (saldo >= preu) {
+                    if (saldo >= preu) 
+                    {
 
                         saldo = saldo - preu;
                         gastado = gastado + preu;
@@ -76,7 +79,9 @@ public class Exdeprovenshare {
                         System.out.println("Compra acceptada");
                         System.out.println("Saldo actual: " + saldo);
 
-                    } else {
+                    }
+                    else
+                    {
 
                         // MOSTRAR: saldo insuficiente
                         System.out.println("No tens saldo suficient");
@@ -91,14 +96,17 @@ public class Exdeprovenshare {
                     String resposta = sc.nextLine();
 
                     if (resposta.equalsIgnoreCase("SI")
-                            || resposta.equalsIgnoreCase("SÍ")) {
+                            || resposta.equalsIgnoreCase("SÍ")) 
+                    {
 
                         // MOSTRAR: resultados finales
                         System.out.println("Diners gastats: " + gastado);
                         System.out.println("Articles comprats: " + cantidad);
                         System.out.println("Saldo final: " + saldo);
 
-                    } else {
+                    }
+                    else 
+                    {
 
                         // CALCULAR: volver al menu
                         opcion = 0;
