@@ -1,0 +1,16 @@
+INICIO
+CALCULAR la variable total = 0.
+MOSTRAR "Introduce el precio de un producto".
+ESPERAR el precio introducido por el usuario.
+CALCULAR si el precio es 0.
+SI el precio es 0
+CALCULAR que la introducción de productos termina.
+SI NO
+CALCULAR total = total + precio.
+VOLVER a MOSTRAR "Introduce el precio de un producto".
+ESPERAR otro precio.
+SI el usuario introduce un texto que no es un número
+MOSTRAR "Error de formato. Operación cancelada por seguridad."
+CALCULAR que la operación termina.
+MOSTRAR el total acumulado.
+FIN.
