@@ -19,26 +19,36 @@ public class CajaRegistradora {
         Scanner teclado = new Scanner(System.in);
         double precio=0, total=0;
         String productos;
-        String error;
+        String entrada;
        
        
         do {
             System.out.println("Escriba el nombre del producto");
             productos = teclado.nextLine();
 //        
-            System.out.println("dime el precio del producto");
-            precio = teclado.nextDouble();
+            System.out.println("dime el precio del producto (pon 0 para salir)");
+            entrada = teclado.nextLine();
+            
             try {
-        precio = Double.parseDouble(error);   // convertir entrada a double
+        precio = Double.parseDouble(entrada);   // convertir entrada a double
+                if (precio>0) {
+                    total = total + precio;
+                }
+                
+                else if (precio==0){
+                    System.out.println("saliendo...");
+                }
         total = total + precio;    // acumular
-    } catch (NumberFormatException e) {
+    } catch (NumberFormatException ex) {
         System.out.println("Error de formato. Operació cancel·lada per seguretat.");
     }  
 
             
             
-        } while (precio>=0);
-        System.out.println("Total: " + total);
+        } while (precio!=0);
+        System.out.println("Productos agregados: ");
+        System.out.println("Productos:" + productos + "precio: " + precio);
+        System.out.println("Tot " + total);
 //          
     }
     
