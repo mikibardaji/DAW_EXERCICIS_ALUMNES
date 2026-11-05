@@ -1,0 +1,50 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercici3funciones;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Caire
+ */
+public class Exercici3Funciones {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner (System.in);
+        
+        int A;
+        int B;
+        int minimofinal;
+        
+        System.out.println("Muestrame 2 numeros enteros y te mostrare cual es el minimo");
+        System.out.print("Numero 1: ");
+        A = teclado.nextInt();
+        
+        System.out.print("Numero 2: ");
+        B= teclado.nextInt();
+        
+        minimofinal = minimo (A,B);
+        
+        System.out.println("El Minimo entre los numero es: " + minimofinal);
+        
+    }
+    
+    
+    public static int minimo (int A, int B){
+    if(A<B){
+    return A;
+    }
+    
+    else{
+    return B;
+    }
+    
+    }
+    
+}
