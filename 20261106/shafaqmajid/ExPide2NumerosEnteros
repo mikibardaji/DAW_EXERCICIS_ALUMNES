@@ -1,0 +1,47 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ex.pide.pkg2.numeros.enteros;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Usuario
+ */
+public class ExPide2NumerosEnteros {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+        int num1, num2, Minimo;
+        
+        System.out.print("Introduce un numero : ");
+        num1 = sc.nextInt();
+        System.out.print("Introduce otra numero : ");
+        num2 = sc.nextInt();
+        
+        Minimo = minimo(num1, num2);
+        System.out.println("El numero minimo es: " + Minimo);
+    } 
+    /**
+     * Compara dos n?meros enteros y devuelve el menor de ellos.
+     * @param a First number to compare
+     * @param b Second number to compare
+     * @return El valor m?nimo entre a y b
+     */
+
+    public static int minimo(int a, int b) {
+        if (a < b)
+        {
+            return a;
+        } 
+        else 
+        {
+            return b;
+        }
+    } 
+} 
