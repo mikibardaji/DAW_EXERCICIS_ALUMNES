@@ -1,0 +1,70 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercici7.funciones;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Caire
+ */
+public class Exercici7Funciones {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+       
+        double area;
+        double perimetro;
+        double ancho;
+        double alto;
+      
+        
+        Scanner teclado = new Scanner (System.in);
+        
+        System.out.print("Pon un ancho del rectangulo: ");
+        ancho = teclado.nextDouble();
+        
+        System.out.print("Pon el alto del rectangulo: ");
+        alto = teclado.nextDouble();
+        
+        
+        area = areaRectangulo(ancho, alto);
+        System.out.println("El area es de: " + area);
+       
+        perimetro = perimetroRectangulo(ancho, alto);
+        System.out.println("Perimetro es: " + perimetro);
+        
+        
+        
+        
+    }
+        public static double perimetroRectangulo (double ancho, double alto) {
+        
+        double perimetro;
+        
+        perimetro = 2 * (alto + ancho);
+        
+        return perimetro;
+        
+        
+ 
+        }
+       
+        public static double areaRectangulo (double ancho, double alto) {
+        
+            double area;
+            
+            area = alto * ancho;
+            
+            return area;
+        
+        
+        
+        }
+    }
+    
