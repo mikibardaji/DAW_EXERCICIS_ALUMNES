@@ -1,0 +1,61 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ez7un.programa.que.pide.el.ancho.y.alto.de.un.rectangulo;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Usuario
+ */
+public class Ez7UnProgramaQuePideElAnchoYAltoDeUnRectangulo {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+     double ancho, alto, perimetro, area;
+
+        ancho = introducirAncho();
+        alto = introducirAlto();
+
+        perimetro = perimetroRectangulo(ancho, alto);
+        area = areaRectangulo(ancho, alto);
+
+        System.out.println("El perimetro es: " + perimetro);
+        System.out.println("El area es: " + area);
+    }
+
+    public static double introducirAncho() {
+        Scanner sc = new Scanner(System.in);
+        double ancho;
+
+        System.out.print("Introduce el ancho: ");
+        ancho = sc.nextDouble();
+        return ancho;
+    }
+
+    public static double introducirAlto() {
+        Scanner sc = new Scanner(System.in);
+        double alto;
+        System.out.print("Introduce el alto: ");
+         alto = sc.nextDouble();
+        return alto;
+    }
+
+    public static double perimetroRectangulo(double ancho, double alto) {
+        double perimetro;
+        perimetro= (ancho * 2) + (alto * 2);
+        return perimetro;
+    }
+
+    public static double areaRectangulo(double ancho, double alto) {
+        double area;  
+        area= ancho * alto; 
+        return area;
+    }
+    
+    
+}
