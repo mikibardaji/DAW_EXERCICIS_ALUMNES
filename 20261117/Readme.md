@@ -1,22 +1,31 @@
-# Joc de Quizz Cultural
+# Joc de preguntes culturals (Versió Proven)
 
 <img src="millonario.jpeg" alt="Logo Quién quiere ser millonario Versió Proven" width="400">
 
-Crearem 2 mètodes per implementar entre tots un joc de preguntes culturals, potser qualsevol tema que domineu, sense que sigui ofensiu.
+Crearem dos mètodes per implementar entre tots un joc de preguntes de cultura general. Podeu triar qualsevol temàtica que domineu, sempre que el contingut sigui respectuós i no ofensiu.
 
-Heu de crear 2 mètodes inicialment.
+## Tasques a realitzar
 
-· *Mètode 1* : Anomena'l **preguntaPrimera** Es un simple mètode que mostra la pregunta i les 4 opcions. A més ha d'esperar a que el jguador escrigui la resposta.
-El mètode ha de retornar la resposta amb majúscula. 
+Inicialment, heu de programar els dos mètodes següents:
 
-· *Metode 2* : Anomena'l **respostaPrimera**, ha de rebre d'entrada un String que es la resposta. I ha de dir si has encertat.
-També si has fallat , programa una resposta diferent per cada opció erronea valida, potser uan frase divertida, i fins i tot
-si es una opció que no es cap de les esperades.
+* **Mètode 1 (`preguntaPrimera`):** 
+  * Ha de mostrar per pantalla l'enunciat de la pregunta juntament amb les 4 opcions possibles (A, B, C, D).
+  * Ha d'esperar que el jugador introdueixi la seva resposta per teclat.
+  * Ha de retornar la resposta introduïda convertida a **majúscules**.
 
-Fes la prova al main que funcionin.
+* **Mètode 2 (`respostaPrimera`):** 
+  * Ha de rebre per paràmetre un `String` amb la resposta del jugador.
+  * Ha de comprovar i indicar per pantalla si la resposta és correcta.
+  * Si l'usuari falla, ha de mostrar un missatge personalitzat i divertit diferent per a cada opció errònia vàlida.
+  * També ha de gestionar el cas en què l'usuari introdueixi una opció no vàlida (diferent de les esperades).
 
-Si encara no han acabat la resta de companys, fes dos mètodes més, per una segona pregunta i resposta.
+## Proves i ampliació
 
-Un cop ho tinguis puja'l aquí mateix (no cal carpeta) però puja sol el fitxer Java.
+1. **Comprovació al `main`:** Crida els mètodes des del mètode `main` per verificar que tot funciona correctament.
+2. **Pregunta extra (opcional):** Si acabes abans que la resta de companys, crea dos mètodes addicionals (`preguntaSegona` i `respostaSegona`) per afegir una segona pregunta al joc.
 
-Un cop vegis en aquest directori fitxers del company, baixa'l al teu projecte, integra'l e intenta respondre correctament les preguntes culturals dels vostre companys.
+## Lliurament i treball col·laboratiu
+
+* **Pujada del fitxer:** Quan ho tinguis llest, puja en aquest mateix espai **únicament el teu fitxer `.java`** (sense comprimir ni dins de cap carpeta).
+* **Integració:** Quan vegis que els teus companys han pujat els seus fitxers al directori, descarrega'ls, integra'ls al teu projecte i posa't a prova intentant encertar les seves preguntes!
+
