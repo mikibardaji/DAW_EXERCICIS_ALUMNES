@@ -1,5 +1,6 @@
 # Joc de Quizz Cultural
 
+![Logo Quién quiere ser millonario Versió Proven](millonario.jpeg)
 
 Crearem 2 mètodes per implementar entre tots un joc de preguntes culturals, potser qualsevol tema que domineu, sense que sigui ofensiu.
 
@@ -17,3 +18,5 @@ Fes la prova al main que funcionin.
 Si encara no han acabat la resta de companys, fes dos mètodes més, per una segona pregunta i resposta.
 
 Un cop ho tinguis puja'l aquí mateix (no cal carpeta) però puja sol el fitxer Java.
+
+Un cop vegis en aquest directori fitxers del company, baixa'l al teu projecte, integra'l e intenta respondre correctament les preguntes culturals dels vostre companys.
