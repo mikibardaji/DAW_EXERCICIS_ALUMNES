@@ -1,6 +1,6 @@
 # Joc de Quizz Cultural
 
-![Logo Quién quiere ser millonario Versió Proven](millonario.jpeg)
+<img src="millonario.jpeg" alt="Logo Quién quiere ser millonario Versió Proven" width="400">
 
 Crearem 2 mètodes per implementar entre tots un joc de preguntes culturals, potser qualsevol tema que domineu, sense que sigui ofensiu.
 
