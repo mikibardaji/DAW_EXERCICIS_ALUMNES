@@ -10,7 +10,7 @@ Inicialment, heu de programar els dos mètodes següents:
 
 * **Mètode 1 (`preguntaPrimera`):** 
   * Ha de mostrar per pantalla l'enunciat de la pregunta juntament amb les 4 opcions possibles (A, B, C, D).
-  * Ha d'esperar que el jugador introdueixi la seva resposta per teclat.
+  * Ha d'esperar que el jugador introdueixi la seva resposta per teclat, no la lletra, sino la resposta total.
   * Ha de retornar la resposta introduïda convertida a **majúscules**.
 
 * **Mètode 2 (`respostaPrimera`):** 
