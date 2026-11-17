@@ -26,5 +26,5 @@ Inicialment, heu de programar els dos mètodes següents:
 
 ## Lliurament i treball col·laboratiu
 
-* **Pujada del fitxer:** Quan ho tinguis llest, puja en aquest mateix espai **únicament el teu fitxer `.java`** (sense comprimir ni dins de cap carpeta).
+* **Pujada del fitxer:** Quan ho tinguis acabat, puja en una carpeta amb el teu cognom  **únicament el teu fitxer `.java`** (sense comprimir ni dins de cap carpeta).
 * **Integració:** Quan vegis els fitxers dels teus comanys de classe, baixa'ls i prova'ls dins el teu projecte.
