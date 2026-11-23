@@ -8,7 +8,7 @@ Crearem dos mètodes per implementar entre tots un joc de preguntes de cultura g
 
 Inicialment, heu de programar els dos mètodes següents:
 
-* **Mètode 1 (`preguntaPrimera`):** 
+* **Mètode 1 (`PrimeraPregunta`):** 
   * Ha de mostrar per pantalla l'enunciat de la pregunta juntament amb les 4 opcions possibles (A, B, C, D).
   * Ha d'esperar que el jugador introdueixi la seva resposta per teclat, no la lletra, sino la resposta total.
   * Ha de retornar la resposta introduïda convertida a **majúscules**.
