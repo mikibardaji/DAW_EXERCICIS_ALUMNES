@@ -17,7 +17,7 @@ public class PreguntasJeanPiero {
         System.out.println("A-  España");
         System.out.println("B-  Marruecos");
         System.out.println("C-  Chipre");
-        System.out.println("D.  Venezuela");
+        System.out.println("D-  Venezuela");
         System.out.println("-------------------");
         System.out.print("Respon (A,B,C o D): ");
       
