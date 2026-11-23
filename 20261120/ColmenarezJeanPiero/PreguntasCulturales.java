@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author aer5219
+ * @author jco5780
  */
 public class PreguntasJeanPiero {
 
