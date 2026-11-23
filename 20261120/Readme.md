@@ -18,6 +18,7 @@ Inicialment, heu de programar els dos mètodes següents:
   * Ha de comprovar i indicar per pantalla si la resposta és correcta, conteu, que no sabeu com ve d'entrada, per tant, hauria de validar que fos correcta, estigues com estigués escrit
   * Si l'usuari falla, ha de mostrar un missatge personalitzat i divertit diferent per a cada opció errònia vàlida.
   * També ha de gestionar el cas en què l'usuari introdueixi una opció no vàlida (diferent de les esperades).
+  * Retornara 1 si has encertat i 0, sino.
 
 ## Proves i ampliació
 
