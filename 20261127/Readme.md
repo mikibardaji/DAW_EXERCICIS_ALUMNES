@@ -1,6 +1,6 @@
 # Crear Joc Sorpresa
 
-1. Descarrega el [ZIP](https://githubusercontent.com) del projecte.
+1. Descarrega el [ZIP](https://github.com/mikibardaji/DAW_EXERCICIS_ALUMNES/raw/refs/heads/main/20261127/JuegoSorpresa.zip) del projecte.
 2. Descomprimeix el fitxer ZIP.
 3. Dins la carpeta del projecte, busca la carpeta `dist`, entra a la carpeta `javadoc` i obre el fitxer `index.html`.
 4. Allà, accedeix a l'apartat **`MetodosJuego`**, on estan explicats un per un tots els mètodes que has d'implementar.
