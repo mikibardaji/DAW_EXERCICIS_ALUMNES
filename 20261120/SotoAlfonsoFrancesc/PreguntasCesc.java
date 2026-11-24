@@ -26,20 +26,21 @@ public class PreguntasCesc {
     }
 
     public static int respostaPrimera(String respuesta) {
-        int resposta = 0;
         if (respuesta.equals("D")) {
             System.out.println("Felicidades has acertado ");
-           resposta = 1;
+           return 1;
         }else if (respuesta.equals("A")) {
             System.out.println("Lo siento has fallado");
-            resposta = 0;
+            return 0;
         }else if (respuesta.equals("B")) {
             System.out.println("Lo siento has fallado");
-            resposta = 0;
+            return 0;
         }else if (respuesta.equals("C")) {
             System.out.println("Lo siento has fallado");
-            resposta = 0;
+            return 0;
+        }else{
+            System.out.println("Resposta no valida");
+            return 0;
         }
-        return resposta;
     }
 }
