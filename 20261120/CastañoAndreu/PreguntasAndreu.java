@@ -2,15 +2,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package responderpreguntasjuego;
+package responderpreguntesjoc;
 
 import java.util.Scanner;
 
 /**
  *
- * @author andca
+ * @author aca4354
  */
-public class PreguntasAndreu {
+public class CastanoAndreu {
     public static String PrimeraPregunta ()
     {
         Scanner sc = new Scanner (System.in);
@@ -35,7 +35,7 @@ public class PreguntasAndreu {
             System.out.println("Acertaste! (Menos mal!)");
             return 1;
         } else if (r.equals("PUYOL")) {
-            System.out.println("Casi! Puyol marc en semifinales contra Alemania, no en la final.");
+            System.out.println("Casi! Puyol marco en semifinales contra Alemania, no en la final.");
             return 0;
         } else if (r.equals("VILLA")) {
             System.out.println("Fallaste! Marco muchos goles en ese Mundial, pero no el de la final.");
@@ -49,4 +49,5 @@ public class PreguntasAndreu {
         }
       
     }
+    
 }
