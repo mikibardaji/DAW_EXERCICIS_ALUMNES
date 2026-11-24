@@ -19,7 +19,6 @@ public class GurleenLibreria {
        
            String respuesta = preguntaPrimera();
         
-        // Recollim el 1 o el 0 que retorna el m?tode
         int puntos = respuestaPrimera(respuesta);
         
         System.out.println("Puntos obtenidos: " + puntos);
@@ -28,7 +27,7 @@ public class GurleenLibreria {
     public static String preguntaPrimera() {
         Scanner teclado = new Scanner(System.in);
 
-        System.out.println("?Cuál es el animal más rápido del mundo?");
+        System.out.println("Cuál es el animal más rápido del mundo?");
         System.out.println("A. León");
         System.out.println("B. Guepardo");
         System.out.println("C. Tigre");
