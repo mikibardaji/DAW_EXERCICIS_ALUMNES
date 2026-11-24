@@ -42,7 +42,7 @@ public class GurleenLibreria {
     public static int respuestaPrimera(String respuesta) {
 
         if (respuesta.equals("B")) {
-            System.out.println("?Muy bien! Esa es la respuesta correcta.");
+            System.out.println("!Muy bien! Esa es la respuesta correcta.");
             return 1; 
 
         } else if (respuesta.equals("A")) {
