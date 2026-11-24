@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author aca4354
  */
-public class CastanoAndreu {
+public class PreguntasCastano {
     public static String PrimeraPregunta ()
     {
         Scanner sc = new Scanner (System.in);
