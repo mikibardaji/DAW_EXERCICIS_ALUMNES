@@ -21,7 +21,7 @@ public class PreguntasJeanPiero {
         System.out.println("-------------------");
         System.out.print("Respon (A,B,C o D): ");
       
-        resposta=teclado.nextLine();
+        respuesta=teclado.nextLine();
 
     }
 }
