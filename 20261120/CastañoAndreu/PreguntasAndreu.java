@@ -29,7 +29,7 @@ public class CastanoAndreu {
     
     public static int respostaPrimera (String resposta1)
     {
-        String r = resposta1.toUpperCase().trim();
+        String r = resposta1.toUpperCase();
 
         if (r.equals("INIESTA")) {
             System.out.println("Acertaste! (Menos mal!)");
