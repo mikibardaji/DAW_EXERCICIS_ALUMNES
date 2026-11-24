@@ -7,7 +7,7 @@
  *
  * @author kande
  */
-package com.mycompany.millonarioproven;
+package PreguntasSudip;
 import java.util.Scanner;
 
 public class PreguntasSudip {
