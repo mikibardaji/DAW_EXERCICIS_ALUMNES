@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author kande
  */
-public class MillonarioProven {
+public class respuestasudip {
 
     public static void main(String[] args) {
 
