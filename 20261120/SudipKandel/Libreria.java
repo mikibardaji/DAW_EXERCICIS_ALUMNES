@@ -10,7 +10,7 @@
 package com.mycompany.millonarioproven;
 import java.util.Scanner;
 
-public class LibreriaMillonario {
+public class PreguntasSudip {
 
  public static String preguntaPrimera() {
 
