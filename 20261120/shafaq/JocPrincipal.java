@@ -10,11 +10,11 @@ package shafaq;
  */
 public class JocPrincipal {
         public static void main(String[] args) {
-        // 1. Cridem el mètode 1 de la teva llibreria i guardem el que retorna
-        String respostaJugador = preguntaprimera.preguntaPrimera();
-        
-        // 2. Passem aquesta resposta al mètode 2 de la teva llibreria
-        preguntaprimera.respostaPrimera(respostaJugador);
+          String resposta = preguntaPrimera();
+
+        int resultado = respostaPrimera(resposta);
+
+        System.out.println("Resultado: " + resultado);
     }
     
 }
