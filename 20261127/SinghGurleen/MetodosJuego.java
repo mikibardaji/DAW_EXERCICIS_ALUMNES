@@ -106,11 +106,11 @@ public static int pedirNumero() {
             System.out.print("Quieres seguir jugando (SI/NO)? ");
             respuesta = sc.nextLine();
 
-            if (respuesta.equalsIgnoreCase("SI") && respuesta.equalsIgnoreCase("NO")) 
+            if (!respuesta.equalsIgnoreCase("SI") && !respuesta.equalsIgnoreCase("NO")) 
             {
                 System.out.println("Respuesta no valida. Escribe SI o NO.");
             }
-        } while (respuesta.equalsIgnoreCase("SI") && respuesta.equalsIgnoreCase("NO"));
+        } while (!respuesta.equalsIgnoreCase("SI") && !respuesta.equalsIgnoreCase("NO"));
 
         return respuesta;
     }
