@@ -116,7 +116,7 @@ public static int pedirNumero() {
     }
 
     public static void pintaAsteriscos(int num) {
-        for (int i = 0; i < num; i++) 
+        for (int i = 1; i < num; i++) 
         {
             System.out.print("*");
         }
