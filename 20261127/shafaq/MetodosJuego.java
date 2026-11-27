@@ -15,7 +15,7 @@ public class MetodosJuego {
 
     /**
      * pedira un numero al usuario que tiene que estar entre 1 y 38 si no, no lo devolvera
-     * y volver‡ a pedirlo
+     * y volver√† a pedirlo
      * Mostrara la frase "apuesta por un numero del 1 al 36 , o elige 37(impar) o 38(par)
      * 
      * @return entero valido (1-38) 
@@ -51,20 +51,19 @@ public class MetodosJuego {
     
     /**
      * Si la respuesta de entrada es igual a Si, sin importar como este escrito y el dinero es positivo, 
-     * la funciÛn decidira  que puedes jugar -  cierto 
+     * la funci√≥n decidira  que puedes jugar -  cierto 
      * Si algun caso no se cumple, no puede jugar 
      * @param respuesta letra escogida por usuario 
      * @param dinero que tiene en ese momento el jugador
      * @return true si puede seguir jugando, false si no
      */
-    public static boolean puedesJugar(String respuesta, int dinero)
+    public static boolean puedesJugar(char respuesta, int dinero)
     {
-    if (respuesta.equalsIgnoreCase("SI") && dinero > 0) {
+    if ((respuesta == 'S' || respuesta == 's') && dinero > 0) {
         return true;
     } else {
         return false;
     }
-        
     }
     
     /**
@@ -90,7 +89,7 @@ public class MetodosJuego {
     /**
      * Dentro se pedira el dinero que quiere apostar, 
      * y devolvera el dinero siempre que sea valido positivo y no sea superior al dinero que tienes en cartera (disponible)
-     * Sino deber‡ seguir pidiendo
+     * Sino deber√† seguir pidiendo
      * @param dinero_disponible dinero que tiene en la cartera el usuario
      * @return dinero apostado valido 
      */
