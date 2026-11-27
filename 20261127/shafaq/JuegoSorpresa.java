@@ -12,8 +12,8 @@ public class JuegoSorpresa {
 
     /**
      * Crear el joc de la ruleta
-     * Comences amb 1000 Ä 
-     * Demanar‡ quina aposta vols 
+     * Comences amb 1000 ‚Ç¨ 
+     * Demanar√† quina aposta vols 
      * Demanes quants diners vols apostar
      * Es tira la bola
      * Calcula els guanys
@@ -32,7 +32,7 @@ public class JuegoSorpresa {
      System.out.println("La bola ha caido en: " + bola);
      
      boolean resultado, resultados;
-     resultado = MetodosJuego.puedesJugar("si", 500);
+     resultado = MetodosJuego.puedesJugar('s', 500);
      System.out.println("Puedes jugar: " + resultado);
      
      result = MetodosJuego.ganancias(10, 5);
