@@ -32,25 +32,25 @@ public class JuegoSorpresa {
                 int premio = MetodosJuego.ganancias(apuesta, numero);
                 dinero = dinero + premio;
                 System.out.println("Has ganado " + premio + " euros");
-            } 
+                } 
             else 
-            {
+                {
                 System.out.println("Has perdido");
-            }
+                }
 
             System.out.println("Tienes " + dinero + " euros");
 
             MetodosJuego.pintaAsteriscos(bola);
 
             if (dinero > 0) 
-            {
+                {
                 respuesta = MetodosJuego.seguirJugando();
-            } 
+                } 
             else 
-            {
+                {
                 System.out.println("Te has quedado sin dinero");
                 respuesta = "NO";
-            }
+                }
         }
 
         System.out.println("Te vas a casa con " + dinero + " euros");
